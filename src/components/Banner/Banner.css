@@ -1,0 +1,24 @@
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 5.3em;
+    height: 540px;
+    width: 100%;
+}
+
+.banner__banner-text {
+    font-size: 62px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+.banner-text__no-change-p {
+    font-weight: bold;
+}
+
+.banner-text__change-p {
+    font-style: italic;
+}
