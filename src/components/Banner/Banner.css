@@ -3,9 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    top: 5.3em;
-    height: 540px;
+    height: 624px;
     width: 100%;
 }
 
@@ -13,6 +11,7 @@
     font-size: 62px;
     font-family: 'Oswald', sans-serif;
     text-align: center;
+    overflow: hidden;
 }
 
 .banner-text__no-change-p {
@@ -21,4 +20,19 @@
 
 .banner-text__change-p {
     font-style: italic;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
+    white-space: nowrap;
+}
+
+.banner-text__change-p.entering {
+    transform: translateX(-50%);
+    opacity: 1;
+}
+
+.banner-text__change-p.exiting {
+    transform: translateX(-55%);
+    opacity: 0;
 }
