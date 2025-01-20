@@ -31,7 +31,7 @@ nav {
     color: #181818;
     font-weight: 500;
     transition: opacity .2s ease-out;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arimo','Roboto', sans-serif;
 }
 
 .nav__a::after {
