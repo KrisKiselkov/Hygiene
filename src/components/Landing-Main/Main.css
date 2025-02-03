@@ -123,7 +123,7 @@ strong {
     position: relative;
     top: 5%;
     left: 7%;
-    background-color: #fff;
+    background-color: #ffffffb2;
     border: none;
     border-radius: 10px;
     width: 18%;
@@ -142,12 +142,139 @@ strong {
     align-items: center;
 }
 
-.bottom-part__product-label {
-
-}
-
 .bottom-part__product-price {
     padding: .3em .5em;
     border: 1px solid #9c9c9c;
     border-radius: 20px;
+}
+
+
+/* PRODUCT RANGE */
+.landing-main__product-range {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 4em;
+}
+
+.product-range__h2 {
+    text-transform: uppercase;
+}
+
+.product-range__product-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.2em;
+}
+
+.product-list__product-list-div {
+    height: 15em;
+    width: 31%;
+    border-radius: 10px;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+.product-list-div--body-products {
+    background-image: url('../../images/toiletries-personal-care.webp');
+    
+}
+
+.product-list-div--dental-products {
+    background-image: url('../../images/natural-dental-products-bondi-beach.webp');
+
+}
+
+.product-list-div--shower-products {
+    background-image: url('../../images/S74176091faa742cba36aae3ea2376fb22.jpg_220x220q75.jpg_.webp');
+}
+
+.product-list-div__p {
+    background-color: #ffffffb2;
+    width: fit-content;
+    padding: .4em .6em;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.product-list-div__p--top-p {
+    position: relative;
+    top: 1em;
+    left: 15.7em;
+}
+
+.product-list-div__p--bottom-p {
+    position: relative;
+    top: 10em;
+    left: 1em;
+}
+
+.product-range__explore-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    margin-top: 5em;
+    gap: 5.5%;
+}
+
+.explore-more__explore-img-divs {
+    display: flex;
+    gap: 1em;
+    width: 40%;
+}
+
+.explore-img-divs__img-div {
+    height: 15.5em;
+    width: 13.5em;
+    border-radius: 10px;
+}
+
+.img-div--fr-div {
+    position: relative;
+    bottom: 1em;
+    background-image: url('../../images/explore-fr-div.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-div--sc-div {
+    position: relative;
+    top: 1em;
+    background-image: url('../../images/explore-sc-div.jpg');
+    background-size: 120% ;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.explore-more__explore-text-div {
+    width: 45%;
+    line-height: 30px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.explore-text-div__explore-btn {
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    background-color: #dbd5fa;
+    padding: .5em .5em .5em 1.2em;
+    gap: .8em;
+    border: none;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.explore-btn__figure {
+    height: 2em;
+    width: 2em;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+.explore-btn__figure img {
+    width: 85%;
+    position: relative;
+    top: 2px;
 }
