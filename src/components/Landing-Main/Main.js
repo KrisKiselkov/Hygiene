@@ -150,11 +150,57 @@ export function Main() {
                 </div>
             </div>
 
-            <div className='landing-main__ratings-div'>
-                <h2 className='ratings-div__h2'>Разгледай отзиви от наши клиенти</h2>
+            <div className='landing-main__ratings'>
+                <h2 className='ratings__h2'>Разгледай отзиви от наши клиенти</h2>
             
-                <div className='ratings-div__ratings-section'>
+                <div className='ratings__ratings-section'>
+                    <div className='ratings__ratings-div'>
+                        <div className='ratings-div__top-flex'>
+                            <p className='ratings-div__name-p'>Boris P.</p>
+                            <figure className='ratings-div__quotes-figure'><img src={require('../../images/double-quotes.png')}></img></figure>
+                        </div>
+                        <p className='ratings-div__testimonial-p'>Lorem ipsum dolor amet concesteur dolor, moron velen ipsum. Beron falan yo ratan emna pogalan totrakan, con. Semon hodon tulon.</p>
+                        <figure className='ratings-div__stars-figure'><img src={require('../../images/5-star-rating.webp')} ></img></figure>
+                    </div>
 
+                    <div className='ratings__ratings-div'>
+                        <div className='ratings-div__top-flex'>
+                            <p className='ratings-div__name-p'>Kristian K.</p>
+                            <figure className='ratings-div__quotes-figure'><img src={require('../../images/double-quotes.png')}></img></figure>
+                        </div>
+                        <p className='ratings-div__testimonial-p'>Lorem ipsum dolor amet concesteur dolor, moron velen ipsum. Beron falan yo ratan emna pogalan totrakan, con. Semon hodon tulon. Lorem ipsum dolor amet concesteur dolor, moron velen ipsum. </p>
+                        <figure className='ratings-div__stars-figure'><img src={require('../../images/5-star-rating.webp')} ></img></figure>
+                    </div>
+
+                    <div className='ratings__ratings-div'>
+                        <div className='ratings-div__top-flex'>
+                            <p className='ratings-div__name-p'>Denis A.</p>
+                            <figure className='ratings-div__quotes-figure'><img src={require('../../images/double-quotes.png')}></img></figure>
+                        </div>
+                        <p className='ratings-div__testimonial-p'>Lorem ipsum dolor amet concesteur dolor, moron velen ipsum. Beron falan yo ratan emna pogalan totrakan, con. Semon hodon tulon. Lorem ipsum dolor amet concesteur dolor, moron velen ipsum.</p>
+                        <figure className='ratings-div__stars-figure'><img src={require('../../images/5-star-rating.webp')} ></img></figure>
+                    </div>             
+                </div>
+            </div>
+
+            <div className='landing-main__why-choose'>
+                <h2 className='why-choose__h2'>Защо да изберете нас?</h2>
+
+                <div className='why-choose__why-blocks'>
+                    <div className='why-blocks__why-block-div'>
+                        <figure className='why-block-div__figure'><img src={require('../../images/sensor_occupied_16dp_181818_FILL0_wght400_GRAD0_opsz20.png')}></img></figure>
+                        <p>Персонализирани продукти</p>
+                    </div>
+
+                    <div className='why-blocks__why-block-div'>
+                        <figure className='why-block-div__figure'><img src={require('../../images/sensor_occupied_16dp_181818_FILL0_wght400_GRAD0_opsz20.png')}></img></figure>
+                        <p>Персонализирани продукти</p>
+                    </div>
+
+                    <div className='why-blocks__why-block-div'>
+                        <figure className='why-block-div__figure'><img src={require('../../images/sensor_occupied_16dp_181818_FILL0_wght400_GRAD0_opsz20.png')}></img></figure>
+                        <p>Персонализирани продукти</p>
+                    </div>
                 </div>
             </div>
         </main>

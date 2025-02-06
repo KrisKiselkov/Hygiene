@@ -278,3 +278,129 @@ strong {
     position: relative;
     top: 2px;
 }
+
+
+/* RATINGS SECTION */
+.landing-main__ratings {
+    margin: 3em 0em;
+}
+
+.ratings__h2 {
+    position: relative;
+    left: 5%;
+    margin-bottom: 2em;
+    width: fit-content;
+}
+
+.ratings__ratings-section {
+    display: flex;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    gap: 2em;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.ratings__ratings-div {
+    height: 13em;
+    min-width: 32em;
+    max-width: 32em;
+    padding: 1.6em 2em;
+    border-radius: 15px;
+    background-color: #dbd5fa;
+}
+
+.ratings-div__top-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ratings-div__name-p {
+    font-weight: bold;
+    font-size: 18px;
+    border: 1px solid #9c9c9c;
+    border-radius: 30px;
+    margin-bottom: 1em;
+    padding: .3em .5em;
+    width: fit-content;
+}
+
+.ratings-div__quotes-figure {
+    width: 2.8em;
+}
+
+.ratings-div__quotes-figure img {
+    width: 100%;
+}
+
+.ratings-div__testimonial-p {
+
+}
+
+.ratings-div__stars-figure {
+    margin: 0 auto;
+    position: relative;
+    top: .7em;
+    width: 10em;
+}
+
+.ratings-div__stars-figure img {
+    width: 100%;
+}
+
+
+/* WHY CHOOSE */
+.landing-main__why-choose {
+    height: 18em;
+    width: 100%;
+    background-image: url('../../images/head_to_toe_collection.webp');
+    background-size: 36%;
+    background-position: 95%;
+    background-repeat: no-repeat;
+    background-color: #dbd5fa;
+}
+
+.why-choose__h2 {
+    position: relative;
+    top: 2em;
+    left: 2.2em;
+    width: fit-content;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.why-choose__why-blocks {
+    display: flex;
+    width: 45em;
+    position: relative;
+    top: 7em;
+    left: 4em;
+    gap: 1%;
+}
+
+.why-blocks__why-block-div {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    width: 32%;
+    height: 5em;
+    padding: .5em;
+    border-radius: 10px;
+    background-color: #18181879;
+    color: #fff;
+}
+
+.why-block-div__figure {
+    width: 48%;
+    height: 4em;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.why-block-div__figure img {
+    position: relative;
+    top: .6em;
+    left: .6em;
+    width: 70%;
+}
