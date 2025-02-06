@@ -20,3 +20,56 @@ body {
 button {
   font-family: 'Arimo','Roboto', sans-serif;
 }
+
+.news-letter {
+  position: relative;
+  height: 14em;
+  width: 100%;
+}
+
+.news-letter__h2 {
+  margin-top: 1.7em;
+  text-align: center;  
+  font-size: 30px;
+}
+
+.news-letter__sub-container {
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  top: 2em;
+  height: 4em;
+  width: 30em;
+  background-color: #dbd5fa;
+  border-radius: 12px;
+}
+
+.news-letter__sub-container input {
+  margin-top: .3em;
+  height: 80%;
+  width: 66.3%;
+  background-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  padding-left: .7em;
+  border-radius: 12px 0px 0px 12px;
+  border: none;
+  border-right: 2px dashed;
+}
+
+#sub-container__inp-btn {
+  position: relative;
+  top: .4em;
+  height: 3.1em;
+  width: 30%;
+  text-transform: uppercase;
+  background-color: #8a6be9;
+  border-radius: 9px;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: .7px;
+  margin: 0 auto;
+  cursor: pointer;
+}
