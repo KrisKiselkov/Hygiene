@@ -4,150 +4,6 @@
     width: 100%;
 }
 
-.landing-main__fh-graph {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0em 6em;
-    font-family: 'Arimo','Roboto', sans-serif;
-    height: 23em;
-    width: 100%;
-    background-color: #EBE8FC;
-}
-
-strong {
-    font-weight: 600;
-}
-
-.fh-graph__p {
-    font-size: 32px;
-    line-height: 48px;
-}
-
-.fh-graph__graphs {
-    width: 50%;
-}
-
-.graphs__p {
-    display: inline;
-    font-size: 18px;
-    padding-left: .5em;
-}
-
-.graphs__span-num {
-    display: inline-block;
-    float: right;
-    padding-right: .5em;
-    font-weight: 600;
-}
-
-.graphs__div-graph {
-    border: 3px solid #181818;
-    border-radius: 30px;
-    height: 3em;
-    margin: .3em 0em 1em 0em;
-    overflow: hidden;
-}
-
-.div-graph__fr-graphs {
-    background-color: #CAE299;
-    height: 100%;
-    width: 100%;
-}
-
-.div-graph__sc-graphs {
-    background-color: #EBC89D;
-    height: 100%;
-    width: 100%;
-}
-
-.div-graph__th-graphs {
-    background-color: #F1F2D5;
-    height: 100%;
-    width: 100%;
-}
-
-
-/* MOST BOUGHT */
-.landing-main__most-bought {
-    height: auto;
-    width: 100%;
-    padding-top: 2em;
-}
-
-.most-bought__title-p {
-    font-size: 30px;
-    text-align: center;
-    padding-bottom: 2em;
-}
-
-.most-bought__title-p span {
-    color: #8a6be9;
-}
-
-.most-bought__mb-products {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2em;
-    height: auto;
-    width: 85%;
-    margin: 0 auto;
-    margin-bottom: 5em;
-}
-
-.mb-products__product-div {
-    height: 17em;
-    flex: 0 0 calc(100% / 5);
-    border-radius: 10px;
-    overflow: hidden;
-    background-color: #EBE8FC;
-}
-
-.product-div__figure {
-    height: 17em;
-    width: 14em;
-    position: absolute;
-    display: flex;
-}
-
-.product-div__figure img {
-    object-fit: contain;
-    height: 80%;
-    width: 80%;
-    margin: auto;
-}
-
-.product-div__atc-btn {
-    position: relative;
-    top: 5%;
-    left: 7%;
-    background-color: #ffffffb2;
-    border: none;
-    border-radius: 10px;
-    width: 18%;
-    height: 13%;
-}
-
-.product-div__atc-btn img {
-    width: 55%;
-}
-
-.product-div__bottom-part {
-    display: flex;
-    position: relative;
-    top: 72%;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.bottom-part__product-price {
-    padding: .3em .5em;
-    border: 1px solid #9c9c9c;
-    border-radius: 20px;
-}
-
 
 /* PRODUCT RANGE */
 .landing-main__product-range {
@@ -189,7 +45,7 @@ strong {
 }
 
 .product-list-div__p {
-    background-color: #ffffffb2;
+    background-color: #dbd5faa1;
     width: fit-content;
     padding: .4em .6em;
     border-radius: 10px;
@@ -280,6 +136,152 @@ strong {
 }
 
 
+/* MOST BOUGHT */
+.landing-main__most-bought {
+    height: auto;
+    width: 100%;
+    padding-top: 2em;
+}
+
+.most-bought__title-p {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+.most-bought__title-p span {
+    color: #8a6be9;
+}
+
+.most-bought__mb-products {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+    height: auto;
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 5em;
+}
+
+.mb-products__product-div {
+    height: 17em;
+    flex: 0 0 calc(100% / 5);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #EBE8FC;
+}
+
+.product-div__figure {
+    height: 17em;
+    width: 14em;
+    position: absolute;
+    display: flex;
+}
+
+.product-div__figure img {
+    object-fit: contain;
+    height: 80%;
+    width: 80%;
+    margin: auto;
+}
+
+.product-div__atc-btn {
+    position: relative;
+    top: 5%;
+    left: 7%;
+    background-color: #ffffffb2;
+    border: none;
+    border-radius: 10px;
+    width: 18%;
+    height: 13%;
+}
+
+.product-div__atc-btn img {
+    width: 55%;
+}
+
+.product-div__bottom-part {
+    display: flex;
+    position: relative;
+    top: 72%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bottom-part__product-price {
+    padding: .3em .5em;
+    border: 1px solid #9c9c9c;
+    border-radius: 20px;
+}
+
+
+/* GRAPH */
+.landing-main__fh-graph {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0em 6em;
+    font-family: 'Arimo','Roboto', sans-serif;
+    height: 23em;
+    width: 100%;
+    background-color: #dbd5fa;
+}
+
+strong {
+    font-weight: 600;
+}
+
+.fh-graph__p {
+    font-size: 32px;
+    line-height: 48px;
+}
+
+.fh-graph__graphs {
+    width: 50%;
+}
+
+.graphs__p {
+    display: inline;
+    font-size: 18px;
+    padding-left: .5em;
+}
+
+.graphs__span-num {
+    display: inline-block;
+    float: right;
+    padding-right: .5em;
+    font-weight: 600;
+}
+
+.graphs__div-graph {
+    border: 3px solid #181818;
+    border-radius: 30px;
+    height: 3em;
+    margin: .3em 0em 1em 0em;
+    overflow: hidden;
+}
+
+.div-graph__fr-graphs {
+    background-color: #CAE299;
+    height: 100%;
+    width: 100%;
+}
+
+.div-graph__sc-graphs {
+    background-color: #EBC89D;
+    height: 100%;
+    width: 100%;
+}
+
+.div-graph__th-graphs {
+    background-color: #F1F2D5;
+    height: 100%;
+    width: 100%;
+}
+
+
 /* RATINGS SECTION */
 .landing-main__ratings {
     margin: 3em 0em;
@@ -303,12 +305,13 @@ strong {
 }
 
 .ratings__ratings-div {
-    height: 13em;
+    height: 15em;
     min-width: 32em;
     max-width: 32em;
     padding: 1.6em 2em;
     border-radius: 15px;
     background-color: #dbd5fa;
+    margin-bottom: 1em;
 }
 
 .ratings-div__top-flex {
@@ -335,7 +338,7 @@ strong {
 }
 
 .ratings-div__testimonial-p {
-
+    height: 6em;
 }
 
 .ratings-div__stars-figure {
@@ -372,19 +375,18 @@ strong {
 
 .why-choose__why-blocks {
     display: flex;
-    width: 45em;
+    width: 40em;
     position: relative;
-    top: 7em;
+    top: 8em;
     left: 4em;
-    gap: 1%;
+    gap: 1em;
 }
 
 .why-blocks__why-block-div {
     display: flex;
-    gap: 1em;
     align-items: center;
     width: 32%;
-    height: 5em;
+    height: 3.7em;
     padding: .5em;
     border-radius: 10px;
     background-color: #18181879;
@@ -392,15 +394,20 @@ strong {
 }
 
 .why-block-div__figure {
-    width: 48%;
-    height: 4em;
+    width: 24%;
+    height: 2.7em;
     border-radius: 8px;
     background-color: #fff;
+    margin-right: .5em;
 }
 
 .why-block-div__figure img {
     position: relative;
-    top: .6em;
-    left: .6em;
+    top: .35em;
+    left: .45em;
     width: 70%;
+}
+
+.why-blocks__why-block-div p {
+    width: 65%;
 }
