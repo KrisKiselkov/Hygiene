@@ -171,6 +171,8 @@
     border-radius: 10px;
     overflow: hidden;
     background-color: #EBE8FC;
+    text-decoration: none;
+    color: #181818;
 }
 
 .product-div__figure {

@@ -1,0 +1,11 @@
+
+.product {
+    width: 100%;
+    height: auto;
+}
+
+.product__product-main {
+    display: flex;
+    width: 88%;
+    margin: 0 auto;
+}
