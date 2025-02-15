@@ -55,12 +55,13 @@
 .product-list-div__p--top-p {
     position: relative;
     top: 1em;
-    left: 15.7em;
+    right: 1em;
+    float: right;
 }
 
 .product-list-div__p--bottom-p {
     position: relative;
-    top: 10em;
+    top: 80.5%;
     left: 1em;
 }
 
@@ -80,7 +81,7 @@
 
 .explore-img-divs__img-div {
     height: 15.5em;
-    width: 13.5em;
+    width: 42%;
     border-radius: 10px;
 }
 
@@ -173,31 +174,38 @@
     background-color: #EBE8FC;
     text-decoration: none;
     color: #181818;
+    
+    
 }
 
 .product-div__figure {
     height: 17em;
     width: 14em;
-    position: absolute;
+    position: relative;
+    bottom: 2.15em;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    z-index: 1;
 }
 
 .product-div__figure img {
     object-fit: contain;
     height: 80%;
     width: 80%;
-    margin: auto;
 }
 
 .product-div__atc-btn {
     position: relative;
     top: 5%;
-    left: 7%;
+    left: 5%;
     background-color: #ffffffb2;
     border: none;
     border-radius: 10px;
     width: 18%;
     height: 13%;
+    z-index: 2;
 }
 
 .product-div__atc-btn img {
@@ -207,7 +215,7 @@
 .product-div__bottom-part {
     display: flex;
     position: relative;
-    top: 72%;
+    bottom: 28%;
     justify-content: space-around;
     align-items: center;
 }
