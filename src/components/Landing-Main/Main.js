@@ -9,9 +9,9 @@ export function Main() {
             return (
                 productsArray.map((prod, index) => (
                     <Link to={`/${prod.id}`} className='mb-products__product-div' key={index}>
+                        <button className='product-div__atc-btn'><img src={require('../../images/shopping_cart_24dp_181818_FILL0_wght400_GRAD0_opsz24.png')}></img></button>
                         <figure className='product-div__figure'><img src={prod.image}></img></figure>
                             
-                        <button className='product-div__atc-btn'><img src={require('../../images/shopping_cart_24dp_181818_FILL0_wght400_GRAD0_opsz24.png')}></img></button>
 
                         <div className='product-div__bottom-part'>
                             <p className='bottom-part__product-label'>{prod.label}</p>
