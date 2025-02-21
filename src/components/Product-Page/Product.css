@@ -1,17 +1,16 @@
 
 .product {
-    width: 100%;
+    width: 90%;
     height: auto;
+    position: relative;
+    top: 6.5em;
+    margin: 0 auto;
 }
 
 .product__product-main {
     display: flex;
-    width: 90%;
     height: 31.5em;
-    background-color: #dbd5fa;
-    margin: 0 auto;
-    position: relative;
-    top: 6.5em;
+    background-color: #dbd5fa; 
     border-radius: 10px;
     padding: 1em;
     gap: 2%;
@@ -173,7 +172,7 @@
 
 .product-num-div__min p {
     position: relative;
-    top: 14px;
+    top: 15px;
     font-weight: bold;
     font-size: 20px;
 }
@@ -233,4 +232,33 @@
 
 .icon-div__p {
     font-size: 14px;
+}
+
+
+/* YML SECTION */
+.product__product-yml {
+    margin-top: 4em;
+}
+
+.product-yml__product-yml-div {
+    margin-bottom: 10em;
+}
+
+.product-yml-div__h2 {
+    margin-bottom: 1em;
+    border-bottom: 2px solid #8a6be9;
+}
+
+.product-yml-div__yml-products {
+    
+}
+
+.yml-products__yml-product-div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 2em;
+    height: auto;
+    overflow-x: scroll;
+    padding-bottom: .5em;
 }

@@ -3,6 +3,7 @@ import { Nav } from '../Nav/Nav';
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { productsArray } from "../ProductsArray";
+import { Link } from "react-router-dom";
 import stars from '../../images/5-star-rating.webp';
 
 
@@ -21,6 +22,32 @@ export function Product() {
     const { label, price } = product[0];
 
     const [ prodNum, setProdNum ] = useState(1);
+
+    const ymlArray = [];
+    for(let i = 0; i < 5; i++) {
+        ymlArray.push(productsArray[i]);
+    };
+
+    const ymlProducts = () => {
+        try {
+            return (
+                ymlArray.map((prod, index) => (
+                    <Link to={`/${prod.id}`} className='mb-products__product-div' key={index}>
+                        <button className='product-div__atc-btn'><img src={require('../../images/shopping_cart_24dp_181818_FILL0_wght400_GRAD0_opsz24.png')}></img></button>
+                        <figure className='product-div__figure'><img src={prod.image}></img></figure>
+                                 
+                        <div className='product-div__bottom-part'>
+                            <p className='bottom-part__product-label'>{prod.label}</p>
+                            <p className='bottom-part__product-price'>${prod.price}</p>
+                        </div>
+                    </Link>
+                        
+                ))
+            )
+        } catch(error) {
+            console.log(error);
+        }         
+    }
 
 
     return (
@@ -103,8 +130,14 @@ export function Product() {
                     </div>
                 </div>
 
-                <div>
-                    
+                <div className="product__product-yml">
+                    <div className="product-yml__product-yml-div">
+                        <h2 className="product-yml-div__h2">Може да харесаш също</h2>
+
+                        <div className="yml-products__yml-product-div">
+                            {ymlProducts()}
+                        </div>
+                    </div>
                 </div>
             </section>
         </>
