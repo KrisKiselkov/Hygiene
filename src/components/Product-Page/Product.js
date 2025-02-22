@@ -130,14 +130,32 @@ export function Product() {
                     </div>
                 </div>
 
-                <div className="product__product-yml">
-                    <div className="product-yml__product-yml-div">
-                        <h2 className="product-yml-div__h2">Може да харесаш също</h2>
+                <div className="product__product-details">
+                    <div className="product-details__details-div product-details__htu-product">
+                        <p className="details-div__main-p">Как се прилага</p>
+                        
+                        <p className="details-div__sec-p">Lorem ipsum dolor amet concesteur dolor, moron velen ipsum. Beron falan yo ratan emna pogalan totrakan, con. Semon hodon tulon. Lorem ipsum dolor amet concesteur dolor, moron velen ipsum.</p>
+                    </div>
 
-                        <div className="yml-products__yml-product-div">
+                    <div className="product-details__details-div product-details__ingredients-product">
+                        <p className="details-div__main-p">Съставки</p>
+                        
+                        <p className="details-div__sec-p">Lorem ipsum dolor amet concesteur dolor, moron velen ipsum. Beron falan yo ratan emna pogalan totrakan, con. Semon hodon tulon. Lorem ipsum dolor amet concesteur dolor, moron velen ipsum.</p>
+                    </div>
+                </div>
+
+                <div className="product__product-yml">
+                    <div className="product-yml__product-yml-content">
+                        <h2 className="product-yml-content__h2">Може да харесаш също</h2>
+
+                        <div className="product-yml-content__yml-product-div">
                             {ymlProducts()}
                         </div>
                     </div>
+                </div>
+
+                <div className="product__product-comments">
+
                 </div>
             </section>
         </>
