@@ -63,6 +63,12 @@ export function Product() {
         return activeQ === id ? "active-question" : "";
     };
 
+    const [input, setInput] = useState('');
+
+    const inputText = (e) => {
+        setInput(e.target.value);
+    }
+
 
     return (
         <>
@@ -247,6 +253,21 @@ export function Product() {
                                 additional services, or better car models. You can find car
                                 rental deals by researching online and comparing prices from
                                 different rental companies.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="product__product-signup-banner">
+                    <div className="product-signup-banner__overlay">
+                        <div className="product-signup-banner__signup-banner-content">
+                            <h2 className="signup-banner-content__h2">Насладете се на 10% отстъпка<br></br>от първата ви поръчка.</h2>
+
+                            <p className="signup-banner-content__p">Регистрирайте се сега и получете ексклузивен код за 10% намаление, който да ползвате при първата Ви поръчка. Присъединете се към Hygiene и подобрете вашето хигиенно изживяване.</p>
+
+                            <div className="signup-banner-content__news-letter">
+                                <input type="text" placeholder="example@gmail.com" value={input} onChange={inputText} required></input>
+                                <button id="signup-banner-content__inp-btn" type="submit" onClick={() => setInput('')}>Subscribe</button>
                             </div>
                         </div>
                     </div>
