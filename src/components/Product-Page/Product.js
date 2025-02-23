@@ -49,6 +49,20 @@ export function Product() {
         }         
     }
 
+    const [activeQ, setActiveQ] = useState("q1");
+
+    const openQ = (id) => {
+        setActiveQ(activeQ === id ? "" : id);
+    };
+
+    const getClassAnswer = (id) => {
+        return activeQ === id ? "active-answer" : "";
+    };
+
+    const getClassQuestion = (id) => {
+        return activeQ === id ? "active-question" : "";
+    };
+
 
     return (
         <>
@@ -146,7 +160,7 @@ export function Product() {
 
                 <div className="product__product-yml">
                     <div className="product-yml__product-yml-content">
-                        <h2 className="product-yml-content__h2">Може да харесаш също</h2>
+                        <h2 className="product__h2">Може да харесаш също</h2>
 
                         <div className="product-yml-content__yml-product-div">
                             {ymlProducts()}
@@ -154,8 +168,92 @@ export function Product() {
                     </div>
                 </div>
 
-                <div className="product__product-comments">
+                <div className="product__product-faq">
+                    <h2 className="product__h2">Често задавани въпроси</h2>
 
+                    <div className="product-faq__faq-div">
+                        <div className="faq-div__question-div">
+                            <div 
+                            onClick={() => openQ("q1")} 
+                            className={`questions ${getClassQuestion("q1")}`}>
+                                <h3 className="question-div__h3">Продуктите ви съдържат ли парабени и сулфати?</h3>
+                            </div>
+
+                            <div
+                                onClick={() => openQ("q1")}
+                                className={`answers ${getClassAnswer("q1")}`}
+                            >
+                                Comparing rental car deals is important as it helps find the
+                                best deal that fits your budget and requirements, ensuring you
+                                get the most value for your money. By comparing various
+                                options, you can find deals that offer lower prices,
+                                additional services, or better car models. You can find car
+                                rental deals by researching online and comparing prices from
+                                different rental companies.
+                            </div>
+                        </div>
+                        
+                        <div className="faq-div__question-div">
+                            <div onClick={() => openQ("q2")} className={`questions ${getClassQuestion("q2")}`}>
+                                <h3 className="question-div__h3">Подходящи ли са вашите продукти за чувствителна кожа?</h3>
+                            </div>
+
+                            <div
+                                onClick={() => openQ("q2")}
+                                className={`answers ${getClassAnswer("q2")}`}
+                            >
+                                Comparing rental car deals is important as it helps find the
+                                best deal that fits your budget and requirements, ensuring you
+                                get the most value for your money. By comparing various
+                                options, you can find deals that offer lower prices,
+                                additional services, or better car models. You can find car
+                                rental deals by researching online and comparing prices from
+                                different rental companies.
+                            </div>
+                        </div>
+
+                        <div className="faq-div__question-div">
+                            <div onClick={() => openQ("q3")} className={`questions ${getClassQuestion("q3")}`}>
+                                <h3 className="question-div__h3">Къде биват произвеждани вашите продукти?</h3>
+                            </div>
+
+                            <div
+                                onClick={() => openQ("q3")}
+                                className={`answers ${getClassAnswer("q3")}`}
+                            >
+                                Comparing rental car deals is important as it helps find the
+                                best deal that fits your budget and requirements, ensuring you
+                                get the most value for your money. By comparing various
+                                options, you can find deals that offer lower prices,
+                                additional services, or better car models. You can find car
+                                rental deals by researching online and comparing prices from
+                                different rental companies.
+                            </div>
+                        </div>
+
+                        <div className="faq-div__question-div">
+                            <div onClick={() => openQ("q4")} className={`questions ${getClassQuestion("q4")}`}>
+                                <h3 className="question-div__h3">Колко време отнема доставката?</h3>
+                            </div>
+
+                            <div
+                                onClick={() => openQ("q4")}
+                                className={`answers ${getClassAnswer("q4")}`}
+                            >
+                                Comparing rental car deals is important as it helps find the
+                                best deal that fits your budget and requirements, ensuring you
+                                get the most value for your money. By comparing various
+                                options, you can find deals that offer lower prices,
+                                additional services, or better car models. You can find car
+                                rental deals by researching online and comparing prices from
+                                different rental companies.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="product__product-comments">
+                    <h2 className="product__h2">Отзиви на клиенти</h2>
                 </div>
             </section>
         </>

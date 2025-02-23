@@ -267,18 +267,18 @@
 
 
 /* YML SECTION */
+.product__h2 {
+    margin-bottom: 1em;
+    padding-bottom: .3em;
+    border-bottom: 2px solid #8a6be9;
+}
+
 .product__product-yml {
     margin-top: 3em;
 }
 
 .product-yml__product-yml-content {
-    margin-bottom: 10em;
-}
-
-.product-yml-content__h2 {
-    margin-bottom: 1em;
-    padding-bottom: .3em;
-    border-bottom: 2px solid #8a6be9;
+    margin-bottom: 3em;
 }
 
 .product-yml-content__yml-product-div {
@@ -290,3 +290,56 @@
     overflow-x: scroll;
     padding-bottom: .5em;
 }
+
+
+/* FAQ SECTION */
+.product__product-faq {
+    margin-bottom: 3em;
+}
+
+.product-faq__faq-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5em auto 0em auto;
+  width: 55%;
+  gap: 5px 0px;
+}
+
+.faq-div__question-div {
+  width: 100%;
+  border: 3px solid #8a6be9;
+}
+
+.question-div__h3 {
+  font-size: 18px;
+}
+
+.questions {
+  display: flex;
+  padding: 1em;
+  cursor: pointer;
+}
+
+.answers {
+  max-height: 0em;
+  overflow: hidden; 
+  font-weight: bold;
+  font-size: 16px;
+  text-align: justify;
+  transition: all .2s ease-out;
+}
+
+.active-question {
+  background-color: #8a6be9;
+  color: #fff;
+  transition: all .2s ease-out;
+}
+
+.active-answer {
+  padding: .5em .8em;
+  max-height: 7em;
+}
+
+
+/* COMMENTS SECTION */
