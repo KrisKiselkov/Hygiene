@@ -4,6 +4,7 @@ import { RouterProvider, Route } from 'react-router-dom';
 import { createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 import { Landing } from './components/Landing';
 import { Product } from './components/Product-Page/Product';
+import { Blog } from './components/Blog-Page/Blog';
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <Route>
         <Route path='/' element={ <Landing /> }/>
         <Route path=':id' element={ <Product /> }/>
+        <Route path='/blog' element={ <Blog /> }/>
     </Route>
   ));
 

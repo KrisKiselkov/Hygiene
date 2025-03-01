@@ -1,8 +1,11 @@
+/* color: EBE8FC 8a6be9 dbd5fa*/
 
 
 .landing-main {
     height: auto;
     width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 
@@ -229,14 +232,19 @@
 
 /* GRAPH */
 .landing-main__fh-graph {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0em 6em;
+    background-color: #dbd5fa;
     font-family: 'Arimo','Roboto', sans-serif;
     height: 23em;
     width: 100%;
-    background-color: #dbd5fa;
+}
+
+.fh-graph__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
 }
 
 strong {

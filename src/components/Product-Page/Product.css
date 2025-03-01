@@ -5,6 +5,7 @@
     position: relative;
     top: 6.5em;
     margin: 0 auto;
+    max-width: 1600px;
 }
 
 .product__product-main {
@@ -359,7 +360,7 @@
     width: 90%;
     margin: 0 auto;
     position: relative;
-    top: 10.3em;
+    top: 9.8em;
 }
 
 .signup-banner-content__h2 {
@@ -370,7 +371,7 @@
 .signup-banner-content__p {
     text-align: justify;
     line-height: 21px;
-    margin-bottom: .5em;
+    margin-bottom: 1em;
 }
 
 .signup-banner-content__news-letter {
@@ -421,6 +422,3 @@
 #signup-banner-content__inp-btn:hover {
     opacity: 1;
 }
-
-
-/* COMMENTS SECTION */

@@ -272,10 +272,6 @@ export function Product() {
                         </div>
                     </div>
                 </div>
-
-                <div className="product__product-comments">
-                    <h2 className="product__h2">Отзиви на клиенти</h2>
-                </div>
             </section>
         </>
     );

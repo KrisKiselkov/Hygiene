@@ -1,0 +1,64 @@
+
+
+.blog {
+    width: 90%;
+    height: auto;
+    position: relative;
+    top: 8em;
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+
+/* BLOG PAGE CONTENT */
+.blog__top-blog-page {
+    line-height: 2;
+    margin-bottom: 3em;
+}
+
+.top-blog-page__p-box {
+    background-color: #EBE8FC;
+    color: #8a6be9;
+    font-weight: 500;
+    width: fit-content;
+    padding: .2em .8em;
+    border-radius: 20px;
+}
+
+.top-blog-page__h1 {
+    font-size: 28px;
+}
+
+.top-blog-page__p {
+
+}
+
+
+/* MAIN BLOG */
+.blog__main-blog {
+    width: 100%;
+    height: 35em;
+    margin-bottom: 13em;
+}
+
+.main-blog__main-blog-div {
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
+    background-image: url('../../images/skincare-ingredients.jpg');
+    background-size: cover;
+}
+
+.main-blog-div__about-main-blog {
+    
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    height: 25%;
+    border-radius: 0px 0px 10px 10px;
+    background: #18181889;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+}
