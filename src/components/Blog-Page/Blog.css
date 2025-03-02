@@ -125,7 +125,7 @@
 .blog__all-blogs {
     width: 100%;
     height: auto;
-    margin-bottom: 13em;
+    margin-bottom: 3em;
 }
 
 .all-blogs__all-blogs-content {
@@ -139,7 +139,7 @@
 }
 
 .all-blogs-content__all-blogs-div {
-    height: auto;
+    height: 23em;
     flex: 0 0 calc(100% / 4);
     border-radius: 10px;
     overflow: hidden;

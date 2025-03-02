@@ -13,6 +13,7 @@ function App() {
         <Route path='/' element={ <Landing /> }/>
         <Route path=':id' element={ <Product /> }/>
         <Route path='/blog' element={ <Blog /> }/>
+        <Route path='/blog/:id' element={ <Landing /> } />
     </Route>
   ));
 

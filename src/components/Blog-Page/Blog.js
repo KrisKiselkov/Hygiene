@@ -1,8 +1,51 @@
 import "./Blog.css"
 import { Nav } from "../Nav/Nav";
+import { useState } from "react";
+import { blogsArrays } from "./BlogsArray";
+import { Link } from "react-router-dom";
 
 
 export function Blog() {
+    const [input, setInput] = useState('');
+    
+    const inputText = (e) => {
+        setInput(e.target.value);
+    }
+
+    const blogFunc = () => {
+       try {
+            return (
+                blogsArrays.map((blog, index) => (
+                    <Link to={`/${blog.id}`} className="all-blogs-content__all-blogs-div" key={index}>
+                        <figure className="all-blogs-div__figure"><img src={blog.image}></img></figure>
+                        <p className="all-blogs-div__about-p">{blog.topic}</p>
+
+                        <div className="all-blogs-div__blog-text">
+                            <h3 className="blog-text__h3">{blog.title}</h3>
+                            <p className="blog-text__p">{blog.primaryP}</p>
+                        </div>
+
+                        <div className="all-blogs-div__blog-user-ttr">
+                            <div className="blog-user-ttr__blog-user">
+                                <figure className="amb-user-date__figure">
+                                    <img src={require('../../images/Aquaphor-Advanced-Therapy-Unscented-Hand-and-Body-Moisturizer-Ointment-for-Cracked-Skin-1-75oz_5f2b8be0-b637-4ed0-bf72-ee2cdca5510e.82f78b82388f236992aa121ae850e46a.png')}></img>
+                                </figure>
+                                <p className="amb-user__p">{blog.author}</p>
+                            </div>
+
+                            <div className="blog-user-ttr__blog-ttr">
+                                <p className="blog-ttr__p">{blog.ttr}</p>
+                            </div>
+                        </div>
+                    </Link>
+                ))
+            )
+        } catch(error) {
+            console.log(error);
+        }         
+    }
+
+
     return (
         <>
             <Nav />
@@ -45,142 +88,20 @@ export function Blog() {
 
                 <div className="blog__all-blogs">
                     <div className="all-blogs__all-blogs-content">
-                        <div className="all-blogs-content__all-blogs-div">
-                            <figure className="all-blogs-div__figure"><img src={require('../../images/natural-dental-products-bondi-beach.webp')}></img></figure>
-                            <p className="all-blogs-div__about-p">Хигиена</p>
+                        {blogFunc()}
+                    </div>
+                </div>
 
-                            <div className="all-blogs-div__blog-text">
-                                <h3 className="blog-text__h3">Заглавие на блог.</h3>
-                                <p className="blog-text__p">Предоставяме съвети и ресурси от лидери в индустрията. Ето как всяка от тях ...</p>
-                            </div>
+                <div className="product__product-signup-banner">
+                    <div className="product-signup-banner__overlay">
+                        <div className="product-signup-banner__signup-banner-content">
+                            <h2 className="signup-banner-content__h2">Насладете се на 10% отстъпка<br></br>от първата ви поръчка.</h2>
 
-                            <div className="all-blogs-div__blog-user-ttr">
-                                <div className="blog-user-ttr__blog-user">
-                                    <figure className="amb-user-date__figure">
-                                        <img src={require('../../images/Aquaphor-Advanced-Therapy-Unscented-Hand-and-Body-Moisturizer-Ointment-for-Cracked-Skin-1-75oz_5f2b8be0-b637-4ed0-bf72-ee2cdca5510e.82f78b82388f236992aa121ae850e46a.png')}></img>
-                                    </figure>
-                                    <p className="amb-user__p">К. Киселков</p>
-                                </div>
+                            <p className="signup-banner-content__p">Регистрирайте се сега и получете ексклузивен код за 10% намаление, който да ползвате при първата Ви поръчка. Присъединете се към Hygiene и подобрете вашето хигиенно изживяване.</p>
 
-                                <div className="blog-user-ttr__blog-ttr">
-                                    <p className="blog-ttr__p">Четене: 5 мин</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="all-blogs-content__all-blogs-div">
-                            <figure className="all-blogs-div__figure"><img src={require('../../images/natural-dental-products-bondi-beach.webp')}></img></figure>
-                            <p className="all-blogs-div__about-p">Хигиена</p>
-
-                            <div className="all-blogs-div__blog-text">
-                                <h3 className="blog-text__h3">Заглавие на блог.</h3>
-                                <p className="blog-text__p">Предоставяме съвети и ресурси от лидери в индустрията. Ето как всяка от тях ...</p>
-                            </div>
-
-                            <div className="all-blogs-div__blog-user-ttr">
-                                <div className="blog-user-ttr__blog-user">
-                                    <figure className="amb-user-date__figure">
-                                        <img src={require('../../images/Aquaphor-Advanced-Therapy-Unscented-Hand-and-Body-Moisturizer-Ointment-for-Cracked-Skin-1-75oz_5f2b8be0-b637-4ed0-bf72-ee2cdca5510e.82f78b82388f236992aa121ae850e46a.png')}></img>
-                                    </figure>
-                                    <p className="amb-user__p">К. Киселков</p>
-                                </div>
-
-                                <div className="blog-user-ttr__blog-ttr">
-                                    <p className="blog-ttr__p">Четене: 5 мин</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="all-blogs-content__all-blogs-div">
-                            <figure className="all-blogs-div__figure"><img src={require('../../images/natural-dental-products-bondi-beach.webp')}></img></figure>
-                            <p className="all-blogs-div__about-p">Хигиена</p>
-
-                            <div className="all-blogs-div__blog-text">
-                                <h3 className="blog-text__h3">Заглавие на блог.</h3>
-                                <p className="blog-text__p">Предоставяме съвети и ресурси от лидери в индустрията. Ето как всяка от тях ...</p>
-                            </div>
-
-                            <div className="all-blogs-div__blog-user-ttr">
-                                <div className="blog-user-ttr__blog-user">
-                                    <figure className="amb-user-date__figure">
-                                        <img src={require('../../images/Aquaphor-Advanced-Therapy-Unscented-Hand-and-Body-Moisturizer-Ointment-for-Cracked-Skin-1-75oz_5f2b8be0-b637-4ed0-bf72-ee2cdca5510e.82f78b82388f236992aa121ae850e46a.png')}></img>
-                                    </figure>
-                                    <p className="amb-user__p">К. Киселков</p>
-                                </div>
-
-                                <div className="blog-user-ttr__blog-ttr">
-                                    <p className="blog-ttr__p">Четене: 5 мин</p>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div className="all-blogs-content__all-blogs-div">
-                            <figure className="all-blogs-div__figure"><img src={require('../../images/natural-dental-products-bondi-beach.webp')}></img></figure>
-                            <p className="all-blogs-div__about-p">Хигиена</p>
-
-                            <div className="all-blogs-div__blog-text">
-                                <h3 className="blog-text__h3">Заглавие на блог.</h3>
-                                <p className="blog-text__p">Предоставяме съвети и ресурси от лидери в индустрията. Ето как всяка от тях ...</p>
-                            </div>
-
-                            <div className="all-blogs-div__blog-user-ttr">
-                                <div className="blog-user-ttr__blog-user">
-                                    <figure className="amb-user-date__figure">
-                                        <img src={require('../../images/Aquaphor-Advanced-Therapy-Unscented-Hand-and-Body-Moisturizer-Ointment-for-Cracked-Skin-1-75oz_5f2b8be0-b637-4ed0-bf72-ee2cdca5510e.82f78b82388f236992aa121ae850e46a.png')}></img>
-                                    </figure>
-                                    <p className="amb-user__p">К. Киселков</p>
-                                </div>
-
-                                <div className="blog-user-ttr__blog-ttr">
-                                    <p className="blog-ttr__p">Четене: 5 мин</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="all-blogs-content__all-blogs-div">
-                            <figure className="all-blogs-div__figure"><img src={require('../../images/natural-dental-products-bondi-beach.webp')}></img></figure>
-                            <p className="all-blogs-div__about-p">Хигиена</p>
-
-                            <div className="all-blogs-div__blog-text">
-                                <h3 className="blog-text__h3">Заглавие на блог.</h3>
-                                <p className="blog-text__p">Предоставяме съвети и ресурси от лидери в индустрията. Ето как всяка от тях ...</p>
-                            </div>
-
-                            <div className="all-blogs-div__blog-user-ttr">
-                                <div className="blog-user-ttr__blog-user">
-                                    <figure className="amb-user-date__figure">
-                                        <img src={require('../../images/Aquaphor-Advanced-Therapy-Unscented-Hand-and-Body-Moisturizer-Ointment-for-Cracked-Skin-1-75oz_5f2b8be0-b637-4ed0-bf72-ee2cdca5510e.82f78b82388f236992aa121ae850e46a.png')}></img>
-                                    </figure>
-                                    <p className="amb-user__p">К. Киселков</p>
-                                </div>
-
-                                <div className="blog-user-ttr__blog-ttr">
-                                    <p className="blog-ttr__p">Четене: 5 мин</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="all-blogs-content__all-blogs-div">
-                            <figure className="all-blogs-div__figure"><img src={require('../../images/natural-dental-products-bondi-beach.webp')}></img></figure>
-                            <p className="all-blogs-div__about-p">Хигиена</p>
-
-                            <div className="all-blogs-div__blog-text">
-                                <h3 className="blog-text__h3">Заглавие на блог.</h3>
-                                <p className="blog-text__p">Предоставяме съвети и ресурси от лидери в индустрията. Ето как всяка от тях ...</p>
-                            </div>
-
-                            <div className="all-blogs-div__blog-user-ttr">
-                                <div className="blog-user-ttr__blog-user">
-                                    <figure className="amb-user-date__figure">
-                                        <img src={require('../../images/Aquaphor-Advanced-Therapy-Unscented-Hand-and-Body-Moisturizer-Ointment-for-Cracked-Skin-1-75oz_5f2b8be0-b637-4ed0-bf72-ee2cdca5510e.82f78b82388f236992aa121ae850e46a.png')}></img>
-                                    </figure>
-                                    <p className="amb-user__p">К. Киселков</p>
-                                </div>
-
-                                <div className="blog-user-ttr__blog-ttr">
-                                    <p className="blog-ttr__p">Четене: 5 мин</p>
-                                </div>
+                            <div className="signup-banner-content__news-letter">
+                                <input type="text" placeholder="example@gmail.com" value={input} onChange={inputText} required></input>
+                                <button id="signup-banner-content__inp-btn" type="submit" onClick={() => setInput('')}>Subscribe</button>
                             </div>
                         </div>
                     </div>
