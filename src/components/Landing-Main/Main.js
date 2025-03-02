@@ -76,7 +76,7 @@ export function Main() {
             </div>
             
             <div className='landing-main__most-bought'>
-                <p className='most-bought__title-p'>Започни промяната към една <span>по-добра</span><br></br> твоя версия чрез <span>нас</span></p>
+                <p className='most-bought__title-p'>Започни промяната към една <span>по-добра</span><br></br> твоя версия чрез <span>нас</span>.</p>
 
                 <div className='most-bought__mb-products'>
                     {mainProducts()}
