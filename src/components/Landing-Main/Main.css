@@ -182,7 +182,7 @@
 }
 
 .product-div__figure {
-    height: 17em;
+    height: 100%;
     width: 14em;
     position: relative;
     bottom: 2.15em;
