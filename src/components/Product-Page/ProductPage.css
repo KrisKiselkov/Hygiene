@@ -1,0 +1,424 @@
+
+.product {
+    width: 90%;
+    height: auto;
+    position: relative;
+    top: 6.5em;
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+.product__product-main {
+    display: flex;
+    height: 31.5em;
+    background-color: #dbd5fa; 
+    border-radius: 10px;
+    padding: 1em;
+    gap: 2%;
+    box-shadow: 0px 0px 10px 0px rgba(139, 107, 233, 0.8);
+    margin-bottom: 3em;
+}
+
+.product-main__product-img-div {
+    display: flex;
+    width: 50%;
+    
+}
+
+.product-img-div__product-all-img {
+    width: 23%;
+    margin-right: 2%;    
+}
+
+.product-all-img__figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 24.6%;
+    background-color: #f0f0f07e;
+    border: 1px solid #9c9c9c;
+    margin-bottom: 3px;
+}
+
+.product-all-img__figure img {
+    width: 75%;
+}
+
+.product-img-div__product-main-img {
+    width: 75%;
+    background-color: #f0f0f07e;
+}
+
+.product-main-img__figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.product-main-img__figure img {
+    width: 80%;
+}
+
+
+.product-main__product-info-div {
+    padding: 0em 1em;
+    width: 48%;
+}
+
+.product-info-div__brand-p {
+    text-transform: uppercase;
+    color: #9c9c9c;
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+
+.product-info-div__h2 {
+    font-size: 32px;
+
+}
+
+.product-info-div__product-rating {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: .9em;
+}
+
+.product-rating__figure {
+    width: 25%;
+    background-color: #64646400;
+    margin: .5em 0em;
+}
+
+.product-rating__figure img {
+    width: 100%;
+}
+
+.product-rating__p {
+    position: relative;
+    bottom: .1em;
+    right: .3em;
+    font-size: 15px;
+}
+
+.product-info-div__product-price-div {
+    display: flex;
+    align-items: baseline;
+    gap: .5em;
+}
+
+.product-price-div__new-price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.product-price-div__old-price {
+    text-decoration: line-through;
+    font-size: 17px;
+    color: #646464;
+}
+
+.product-price-div__discount {
+    background-color: #fff;
+    color: #8a6be9;
+    padding: .3em .5em;
+    border-radius: 10px;
+}
+
+.product-info-div__desc-p {
+    margin: 1em 0em;
+    line-height: 20px;
+}
+
+.product-size-div__p {
+    font-weight: bold;
+}
+
+.product-size-div__btn {
+    margin-top: .5em;
+    font-size: 17px;
+    width: 100%;
+    height: 2em;
+    border-radius: 30px;
+    border: 1px solid #9c9c9c;
+    background-color: #fff;
+    color: #8a6be9;
+}
+
+.product-info-div__product-atc-div {
+    display: flex;
+    gap: 2%;
+    width: 100%;
+    margin-top: 1em;
+    height: 10.7%;
+}
+
+.product-atc-div__product-num-div {
+    display: flex;
+    align-items: center;
+    width: 28%;
+    height: 100%;
+    border: 1px solid #9c9c9c;
+    border-radius: 30px;
+    background-color: #fff;
+    color: #8a6be9;
+    text-align: center;
+    overflow: hidden;
+}
+
+.product-num-div__min {
+    width: 29%;
+    height: 100%;
+    
+}
+
+.product-num-div__min p {
+    position: relative;
+    top: 12px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.product-num-div__min:hover {
+    background-color: #c5c5c5;
+}
+
+.product-num-div__num {
+    width: 42%;
+    border-left: 1px solid #9c9c9c;
+    border-right: 1px solid #9c9c9c;
+}
+
+.product-num-div__plus {
+    width: 29%;
+
+}
+
+.product-atc-div__atc-btn {
+    border-radius: 30px;
+    background-color: #fff;
+    color: #8a6be9;
+    font-size: 18px;
+    width: 70%;
+    height: 100%;
+    border: 1px solid #9c9c9c;
+}
+
+.product-info-div__product-icons-div {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2.6%;
+    width: 100%;
+    height: 17.3%;
+    background-color: #f0f0f07e;
+    border-radius: 10px;
+}
+
+.product-icons-div__icon-div {
+    width: 15%;
+    text-align: center;
+}
+
+.icon-div__figure {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: .2em;
+}
+
+.icon-div__figure img {
+    height: 90%;
+}
+
+.icon-div__p {
+    font-size: 14px;
+}
+
+
+/* PRODUCT DETAILS */
+.product__product-details {
+    display: flex;
+    gap: 3em;
+    margin-bottom: 2.7em;
+}
+
+.product-details__details-div {
+    width: 50%;
+    border: 1.5px solid #181818;
+    border-radius: 10px;
+    padding: 1em 1.1em;
+}
+
+.details-div__main-p {
+    font-size: 19px;
+    padding-bottom: .5em;
+    margin-bottom: .5em;
+    border-bottom: 2px solid #8a6be9;
+    font-weight: 500;
+}
+
+.details-div__sec-p {
+    text-align: justify;
+    line-height: 22px;
+}
+
+
+/* YML SECTION */
+.product__h2 {
+    margin-bottom: 1em;
+}
+
+.product__product-yml {
+    margin-bottom: 3em;
+}
+
+.product-yml-content__yml-product-div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 2em;
+    height: auto;
+    overflow-x: scroll;
+    padding-bottom: .5em;
+}
+
+
+/* FAQ SECTION */
+.product__product-faq {
+    margin-bottom: 3em;
+}
+
+.product-faq__faq-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5em auto 0em auto;
+  width: 55%;
+  gap: 5px 0px;
+}
+
+.faq-div__question-div {
+  width: 100%;
+  border: 3px solid #8a6be9;
+}
+
+.question-div__h3 {
+  font-size: 18px;
+}
+
+.questions {
+  display: flex;
+  padding: 1em;
+  cursor: pointer;
+}
+
+.answers {
+  max-height: 0em;
+  overflow: hidden; 
+  font-weight: bold;
+  font-size: 16px;
+  text-align: justify;
+  transition: all .2s ease-out;
+}
+
+.active-question {
+  background-color: #8a6be9;
+  color: #fff;
+  transition: all .2s ease-out;
+}
+
+.active-answer {
+  padding: .5em .8em;
+  max-height: 7em;
+}
+
+
+/* SIGNUP BANNER */
+.product__product-signup-banner {
+    width: 100%;
+    height: 25em;
+    background-image: url('../../images/skincare-ingredients.jpg');
+    background-size: 100%;
+    background-position: center;
+    margin-bottom: 3em;
+}
+
+.product-signup-banner__overlay {
+    width: 50%;
+    height: 100%;
+    background-color: #0000004b;
+    z-index: 2;
+}
+
+.product-signup-banner__signup-banner-content {
+    color: #fff;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    top: 9.8em;
+}
+
+.signup-banner-content__h2 {
+    font-size: 28px;
+    margin-bottom: .3em;
+}
+
+.signup-banner-content__p {
+    text-align: justify;
+    line-height: 21px;
+    margin-bottom: 1em;
+}
+
+.signup-banner-content__news-letter {
+  display: flex;
+  height: 4em;
+  width: 30em;
+  border-radius: 12px;
+  border: 2px solid;
+}
+
+.signup-banner-content__news-letter input {
+  margin-top: .3em;
+  height: 80%;
+  width: 66.3%;
+  background-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  padding-left: .7em;
+  border-radius: 12px 0px 0px 12px;
+  border: none;
+  border-right: 2px dashed;
+}
+
+.signup-banner-content__news-letter input::placeholder {
+    color: #fff;
+}
+
+
+#signup-banner-content__inp-btn {
+  position: relative;
+  top: .4em;
+  height: 3.1em;
+  width: 30%;
+  text-transform: uppercase;
+  background-color: #8a6be9;
+  opacity: .8;
+  border-radius: 9px;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: .7px;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: opacity .3s;
+}
+
+#signup-banner-content__inp-btn:hover {
+    opacity: 1;
+}

@@ -2,7 +2,7 @@
 
 export const blogsArrays = [
     {
-        id: 1,
+        id: '1',
         title: "Какви са ползите от хумата?",
         image: require("../../images/toiletries-personal-care.webp"),
         topic: "Хигиена",
@@ -11,16 +11,16 @@ export const blogsArrays = [
         ttr: "5 мин"
     },
     {
-        id: 2,
+        id: '2',
         title: "Скритите ползи от чесъна.",
         image: require("../../images/explore-sc-div.jpg"),
         topic: "Дентална хигиена",
-        primaryP: "Свойствата на чесъна предоставят както и незабравима миризма, така и премахване на зачервените венци като ...",
+        primaryP: "Свойствата на чесъна предоставят както и незабравима миризма, така и премахване на зачервените ...",
         author: "Б. Петров",
         ttr: "7 мин"
     },
     {
-        id: 3,
+        id: '3',
         title: "Какви са ползите от хумата?",
         image: require("../../images/explore-fr-div.jpg"),
         topic: "Хигиена",
@@ -29,16 +29,16 @@ export const blogsArrays = [
         ttr: "5 мин"
     },
     {
-        id: 4,
+        id: '4',
         title: "Скритите ползи от чесъна.",
         image: require("../../images/skincare-ingredients.jpg"),
         topic: "Дентална хигиена",
-        primaryP: "Свойствата на чесъна предоставят както и незабравима миризма, така и премахване на зачервените венци като ...",
+        primaryP: "Свойствата на чесъна предоставят както и незабравима миризма, така и премахване на зачервените ...",
         author: "Б. Петров",
         ttr: "7 мин"
     },
     {
-        id: 5,
+        id: '5',
         title: "Какви са ползите от хумата?",
         image: require("../../images/head_to_toe_collection.webp"),
         topic: "Хигиена",
@@ -47,11 +47,11 @@ export const blogsArrays = [
         ttr: "5 мин"
     },
     {
-        id: 6,
+        id: '60',
         title: "Скритите ползи от чесъна.",
         image: require("../../images/natural-dental-products-bondi-beach.webp"),
         topic: "Дентална хигиена",
-        primaryP: "Свойствата на чесъна предоставят както и незабравима миризма, така и премахване на зачервените венци като ...",
+        primaryP: "Свойствата на чесъна предоставят както и незабравима миризма, така и премахване на зачервените ...",
         author: "Б. Петров",
         ttr: "7 мин"
     },

@@ -86,6 +86,7 @@
 
 .amb-user-date__figure {
     width: 2.5em;
+    height: 2.5em;
     margin-right: .7em;
     border-radius: 50%;
     overflow: hidden;
@@ -115,9 +116,10 @@
 .blog-hr {
     width: 95%;
     margin: 0 auto;
-    height: 2px;
+    height: 1px;
     background-color: #8a6be9;
     margin-bottom: 3em;
+    border: none;
 }
 
 
