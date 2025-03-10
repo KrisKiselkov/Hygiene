@@ -7,7 +7,7 @@ export function Nav() {
         <header>
             <nav>
                 <div className="nav__div nav-div-one">
-                    <NavLink to={"/"} className="nav__a"><p>Продукти</p></NavLink>
+                    <NavLink to={"/products"} className="nav__a"><p>Продукти</p></NavLink>
                     <NavLink to={"/blog"} className="nav__a"><p>Блог</p></NavLink>
                 </div>
                 <NavLink to={"/"} className="nav-main__a"><p>Hygiene</p></NavLink>

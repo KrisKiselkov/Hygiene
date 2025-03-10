@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import stars from '../../images/5-star-rating.webp';
 
 
-export function Product() {
+export function ProductPage() {
     const { id } = useParams();
     const product = productsArray.filter((item) => item.id === id);
 

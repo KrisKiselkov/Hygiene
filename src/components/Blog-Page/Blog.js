@@ -16,7 +16,7 @@ export function Blog() {
        try {
             return (
                 blogsArrays.map((blog, index) => (
-                    <Link to={`/${blog.id}`} className="all-blogs-content__all-blogs-div" key={index}>
+                    <Link to={`/blog/${blog.id}`} className="all-blogs-content__all-blogs-div" key={index}>
                         <figure className="all-blogs-div__figure"><img src={blog.image}></img></figure>
                         <p className="all-blogs-div__about-p">{blog.topic}</p>
 

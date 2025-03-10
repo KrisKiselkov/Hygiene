@@ -1,3 +1,4 @@
+import './BlogPage.css';
 import { Nav } from '../Nav/Nav';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
@@ -22,9 +23,11 @@ export function BlogPage() {
             <Nav />
             <section className="blog-page">
                 <div className="blog-page__blog-page-main">
-                    <figure className="blog-page-main__figure">
-                        <img></img>
-                    </figure>
+                    <div className='blog-page__blur'>
+                        <figure className="blog-page-main__figure">
+                            <img src={image}></img>
+                        </figure>
+                    </div>
                 </div>
             </section>
         </>

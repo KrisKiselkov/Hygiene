@@ -1,0 +1,39 @@
+
+.blog-page {
+    width: 90%;
+    height: auto;
+    position: relative;
+    top: 6.5em;
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+.blog-page__blog-page-main {
+    width: 100%;
+    height: 30em;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.blog-page__blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #18181889;
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+}
+
+.blog-page-main__figure {
+    height: 100%;
+    width: 100%;
+}
+
+.blog-page-main__figure img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
