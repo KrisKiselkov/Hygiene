@@ -7,11 +7,12 @@ import { ProductPage } from './components/Product-Page/ProductPage';
 import { Blog } from './components/Blog-Page/Blog';
 import { BlogPage } from './components/Blog-Page/BlogPage';
 import { Product } from './components/Product-Page/Product';
+import Layout from './components/Layout';
 
 
 function App() {
   const router = createBrowserRouter(createRoutesFromElements(
-    <Route>
+    <Route element={<Layout />}>
         <Route path="/" element={<Landing />} />
         <Route path="/products" element={<Product />} />
         <Route path="/products/:id" element={<ProductPage />} />

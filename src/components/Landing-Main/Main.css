@@ -93,7 +93,7 @@
     position: relative;
     bottom: 1em;
     background-image: url('../../images/explore-fr-div.jpg');
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -102,7 +102,7 @@
     position: relative;
     top: 1em;
     background-image: url('../../images/explore-sc-div.jpg');
-    background-size: 120% ;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 10px;
