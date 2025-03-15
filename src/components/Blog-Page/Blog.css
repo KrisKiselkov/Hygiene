@@ -27,6 +27,15 @@
 
 .top-blog-page__h1 {
     font-size: 28px;
+    transition: opacity .5s ease-out;
+}
+
+.top-blog-page__h1.entering {
+    opacity: 1;
+}
+
+.top-blog-page__h1.exiting {
+    opacity: 0;
 }
 
 .top-blog-page__p {

@@ -17,7 +17,7 @@ export function BlogPage() {
         }
     }, [image]);
 
-    const { textOne, author, authorImg, imageOne } = blog[0];
+    const { textOne, author, authorImg, imageOne, topicTwo, textTwo, imageTwo, topicThree, textThree, imageThree, conclusion } = blog[0];
 
 
     return (
@@ -56,30 +56,42 @@ export function BlogPage() {
                         <p className='blog-content-text__p'>
                             {textOne}
                         </p>
-
                         <figure className='blog-content-text__figure'><img src={imageOne} alt='image'></img></figure>
 
+                        <h3 className='blog-content-text__h3'>{topicTwo}</h3>
                         <p className='blog-content-text__p'>
-                            {textOne}
+                            {textTwo}
+                        </p>
+                        <figure className='blog-content-text__figure'><img src={imageTwo} alt='image'></img></figure>
+
+                        <h3 className='blog-content-text__h3'>{topicThree}</h3>
+                        <p className='blog-content-text__p'>
+                            {textThree}
+                        </p>
+                        <figure className='blog-content-text__figure'><img src={imageThree} alt='image'></img></figure>
+
+                        <h3 className='blog-content-text__h3'>Заключение</h3>
+                        <p className='blog-content-text__p'>
+                            {conclusion}
                         </p>
                     </div>
 
                     <div className='blog-content__blog-content-nav'>
                         <ul className='blog-content-nav__blog-nav-ul'>
                             <li className='blog-nav-ul__li'>
-                                <p>Тема 1</p>
+                                <p>Въведиение</p>
                             </li>
 
                             <li className='blog-nav-ul__li'>
-                                <p>Тема 2</p>
+                                <p>{topicTwo}</p>
                             </li>
 
                             <li className='blog-nav-ul__li'>
-                                <p>Тема 3</p>
+                                <p>{topicThree}</p>
                             </li>
 
                             <li className='blog-nav-ul__li'>
-                                <p>Тема 4</p>
+                                <p>Заключение</p>
                             </li>
                         </ul>
 

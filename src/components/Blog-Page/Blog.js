@@ -1,11 +1,28 @@
 import "./Blog.css"
 import { Nav } from "../Nav/Nav";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { blogsArrays } from "./BlogsArray";
 import { Link } from "react-router-dom";
 
 
 export function Blog() {
+    const [ currentTitleIndex, setCurrentTitleIndex ] = useState(0);
+
+    const titleOptions = blogsArrays[currentTitleIndex].title;
+    const [transitionStage, setTransitionStage] = useState("entering");
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setTransitionStage("exiting");
+            setTimeout(() => {
+                setCurrentTitleIndex((prevIndex) => (prevIndex + 1) % blogsArrays.length);
+                setTransitionStage("entering");
+            }, 500);
+        }, 2500);
+    
+        return () => clearInterval(interval);
+    }, []);
+
     const [input, setInput] = useState('');
     
     const inputText = (e) => {
@@ -53,7 +70,7 @@ export function Blog() {
             <section className="blog">
                 <div className="blog__top-blog-page">
                     <p className="top-blog-page__p-box">Чети нашия сермичен блог.</p>
-                    <h1 className="top-blog-page__h1">Заглавие на блог публикация.</h1>
+                    <h1 className={`top-blog-page__h1 ${transitionStage}`}>{titleOptions}</h1>
                     <p className="top-blog-page__p">Предоставяме съвети и ресурси от лидери в индустрията. Наистина.</p>
                 </div>
 
