@@ -3,6 +3,7 @@ import { Nav } from "../Nav/Nav";
 import { useState, useEffect } from "react";
 import { blogsArrays } from "./BlogsArray";
 import { Link } from "react-router-dom";
+import { Footer } from "../Footer/Footer";
 
 
 export function Blog() {
@@ -109,7 +110,7 @@ export function Blog() {
                     </div>
                 </div>
 
-                <div className="product__product-signup-banner">
+                <div className="product__product-signup-banner product-signup-banner--blog">
                     <div className="product-signup-banner__overlay">
                         <div className="product-signup-banner__signup-banner-content">
                             <h2 className="signup-banner-content__h2">Насладете се на 10% отстъпка<br></br>от първата ви поръчка.</h2>
@@ -124,6 +125,8 @@ export function Blog() {
                     </div>
                 </div>
             </section>
+
+            <Footer />
         </>
     );
 }

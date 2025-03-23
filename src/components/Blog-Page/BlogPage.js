@@ -3,6 +3,7 @@ import { Nav } from '../Nav/Nav';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { blogsArrays } from './BlogsArray';
+import { Footer } from '../Footer/Footer';
 
 
 export function BlogPage() {
@@ -134,6 +135,8 @@ export function BlogPage() {
                     </div>
                 </div>
             </section>
+
+            <Footer />
         </>
     );
 }

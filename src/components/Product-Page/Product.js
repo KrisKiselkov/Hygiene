@@ -3,6 +3,7 @@ import { Nav } from "../Nav/Nav";
 import { useState, useEffect } from 'react';
 import { productsArray } from '../ProductsArray';
 import { Link } from 'react-router-dom';
+import { Footer } from '../Footer/Footer';
 
 
 export function Product() {
@@ -221,6 +222,8 @@ export function Product() {
                     </div>
                 </div>
             </section>
+
+            <Footer />
         </>
     );
 }

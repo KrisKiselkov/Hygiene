@@ -38,6 +38,7 @@
     display: flex;
     gap: 3em;
     position: relative;
+    margin-bottom: 9.5em;
 }
 
 .blog-content__blog-content-text {

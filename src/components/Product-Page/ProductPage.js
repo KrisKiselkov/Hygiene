@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import { productsArray } from "../ProductsArray";
 import { Link } from "react-router-dom";
 import stars from '../../images/5-star-rating.webp';
+import { Footer } from "../Footer/Footer";
 
 
 export function ProductPage() {
@@ -273,6 +274,8 @@ export function ProductPage() {
                     </div>
                 </div>
             </section>
+
+            <Footer />
         </>
     );
 }
