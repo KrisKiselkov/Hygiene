@@ -73,6 +73,56 @@ export function Product() {
                             </div>
                         </div>
                     </div>
+
+                    
+                    <div className='products-page-banner__pb-div pb-div--trdiv'>
+                        <div className='pb-div__pb-div-text'>
+                            <h3 className='pb-div-text__h3'>Най-продавани <br></br>продукти.</h3>
+        
+                            <div className='pb-div-text__pb-view-prod-div'>
+                                <figure className='pb-view-prod-div__figure'>
+                                    <img src={require('../../images/arrow_outward_black.png')}></img>
+                                </figure>
+                                <p className='pb-view-prod-div__p'>Разгледай продуктите.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div className='products-page-banner__pb-div pb-div--frthdiv'>
+                        <div className='pb-div__pb-div-text'>
+                            <div className='pb-div-text__pb-view-prod-div pb-view-prod-div--frthdiv'>
+                                <figure className='pb-view-prod-div__figure'>
+                                    <img src={require('../../images/arrow_outward_black.png')}></img>
+                                </figure>
+                                <p className='pb-view-prod-div__p'>Разгледай абонаментите.</p>
+                            </div>
+
+                            <h3 className='pb-div-text__h3--frthdiv'>Абонаментни <br></br>планове.</h3>
+                        </div>
+                    </div>
+
+                    
+                    <div className='products-page-banner__pb-div pb-div--fithdiv'>
+                        <div className='pb-div__pb-div-text'>
+                            <h3 className='pb-div-text__h3'>Нашите <br></br>блог странци.</h3>
+        
+                            <div className='pb-div-text__pb-view-prod-div'>
+                                <figure className='pb-view-prod-div__figure'>
+                                    <img src={require('../../images/arrow_outward_black.png')}></img>
+                                </figure>
+                                <p className='pb-view-prod-div__p'>Разгледай блоговете.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div className='products-page-banner__pb-div pb-div--sixdiv'>
+                        <div>
+                            <p className='pb-div--sixdiv__fr-p'>Hygiene</p>
+                            <p className='pb-div--sixdiv__sc-p'>Bulgaria</p>
+                        </div>
+                    </div>
                 </div>
 
                 {/* <div className="products-page__grid">
