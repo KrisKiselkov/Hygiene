@@ -1,0 +1,74 @@
+
+.footer {
+    background-color: #8a6be9;
+    color: #fff;
+    height: 22em;
+    width: 100%;
+}
+
+.footer__footer-content {
+    display: flex;
+    padding: 4em;
+    gap: 8%;
+}
+
+.footer-content__footer-contacts {
+    width: 28%;
+}
+
+.footer-contacts__footer-logo {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 36px;
+    width: fit-content;
+    margin-bottom: .5em;
+}
+
+.footer-logo__fr-p {
+    font-size: 40px;
+}
+
+.footer-logo__sc-p {
+    font-size: 24px;
+    text-align: center;
+}
+
+.footer-contacts__slogan {
+    margin-bottom: 1.5em;
+}
+
+.footer-contacts__footer-number {
+    margin-bottom: .5em;
+}
+
+.footer-contacts__footer-email {
+    margin-bottom: .5em;
+}
+
+.footer-contacts__footer-address {
+    
+}
+
+
+.footer-content__footer-links {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links__f-l-company {
+
+}
+
+.f-l-company__p {
+    font-weight: 800;
+    font-size: 17px;
+    margin-bottom: .3em;
+}
+
+.f-l-company__ul-company {
+    list-style: none;
+    line-height: 30px;
+}
