@@ -204,140 +204,68 @@
 }
 
 
-/*  */ 
-.products-page__grid {
-    display: grid;
-    grid-template-columns: 24% 73%;
-    gap: 3%;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    margin-bottom: 9.5em;
-  }
-  
-  
-  /* RECIPES FILTER */
-  .products-page__filter {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: fit-content;
-    border-radius: 4px;
-    box-shadow: 0px 3px 10px 1px #18181850;
-    padding: 1em;
-  }
-  
-  .products-page__categories-div {
-    width: 100%;
-  }
-  
-  .products-page-col-h2 {
-    font-size: 22px;
-    margin-bottom: .5em;
-    border-bottom: 2px dashed #e9e9e9;
-  }
-  
-  .products-page__pp-all-categories {
-    position: relative;
-    bottom: .8em;
-  }
-  
-  .category-div {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    top: 1em;
-    
-  }
-  
-  .category-div + .category-div::after {
-    content: "";
-    position: absolute;
-    height: 1px;
-    width: 100%;
-    background-color: #e9e9e9;
-  }
-  
-  .category__order-setting {
-    display: flex;
-    align-items: center;
-    height: 2.8em;
-  }
-  
-  .category-div input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
-  
-  /* Create a custom checkbox */
-  .checkmark {
-    position: relative;
-    left: .3em;
-    height: 17px;
-    width: 17px;
-    border: 1px solid #8a6be9;
-    border-radius: 4px;
-    transition: all .2s;
-  }
-  
-  /* On mouse-over, add a grey background color */
-  .category-div:hover input ~ .checkmark {
-    background-color: #eee;
-  }
-  
-  /* When the checkbox is checked, add a blue background */
-  .category-div input:checked ~ .checkmark {
-    background-color: #8a6be9;
-  }
-  
-  /* Create the checkmark/indicator (hidden when not checked) */
-  .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-  
-  /* Show the checkmark when checked */
-  .category-div input:checked ~ .checkmark:after {
-    display: block;
-  }
-  
-  /* Style the checkmark/indicator */
-  .category-div .checkmark:after {
-    left: 4px;
-    top: 1px;
-    width: 4px;
-    height: 8px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-  
-  .category__label {
-    position: relative;
-    left: .7em;
-    width: 11em;
-    font-weight: 500;
-    transition: all .2s ease-out;
-  }
+/*  */
+.products-page__pp-filter-products {
+
+}
+
+.pp-filter-products__pp-filter-section {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-bottom: 3em;
+  width: 90%;
+}
+
+.pp-filter-section__pp-filter-label {
+
+}
+
+.pp-filter-label__pp-filter-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 1em 2em;
+  background-color: #dbdbdb7e;
+  border-radius: 10px;
+  transition: all .3s;
+}
+
+.pp-filter-div__input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.pp-filter-label__pp-filter-div-true {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 1em 2em;
+  color: #fff;
+  background-color: #8a6be9;
+  border-radius: 10px;
+  transition: all .3s;
+}
+
+.pp-filter-div__p {
+  font-weight: 500;
+}
 
 
 /* ALL PRODUCTS SECTION */
-.products-page__all-products-section {
+.pp-filter-products__all-products-section {
   display: flex;
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-  row-gap: 1.5em;
-  column-gap: 3%;
+  align-content: center;
+  justify-content: center;
   flex-wrap: wrap;
-}
-
-.all-products-section__aps-product-div {
-  flex: 0 0 calc(94% / 3);
+  gap: 2em;
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 3em;
 }

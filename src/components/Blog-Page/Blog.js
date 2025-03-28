@@ -119,7 +119,7 @@ export function Blog() {
 
                             <div className="signup-banner-content__news-letter">
                                 <input type="text" placeholder="example@gmail.com" value={input} onChange={inputText} required></input>
-                                <button id="signup-banner-content__inp-btn" type="submit" onClick={() => setInput('')}>Subscribe</button>
+                                <button id="signup-banner-content__inp-btn" type="submit" onClick={() => setInput('')}>Абониране</button>
                             </div>
                         </div>
                     </div>
