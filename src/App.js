@@ -8,6 +8,7 @@ import { Blog } from './components/Blog-Page/Blog';
 import { BlogPage } from './components/Blog-Page/BlogPage';
 import { Product } from './components/Product-Page/Product';
 import Layout from './components/Layout';
+import { Subscriptions } from './components/Subscriptions-Page/Subscriptions';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/products/:id" element={<ProductPage />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:id" element={<BlogPage />} />
+        <Route path='/subscriptions' element={<Subscriptions />} />
     </Route>
   ));
 

@@ -1,0 +1,159 @@
+
+
+.subscriptions {
+    height: auto;
+    width: 90%;
+    max-width: 1600px;
+    margin: 0 auto;
+    position: relative;
+    top: 6.5em;
+}
+
+
+/* SUBSCRIPTIONS HEADING */
+.subscriptions__sub-heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.sub-heading__sub-heading-text {
+    text-align: center;
+    margin-top: 5em;
+}
+
+.sub-heading-text__h1 {
+    font-size: 35px;
+}
+
+.sub-heading-text__h1 span {
+    color: #8a6be9;
+}
+
+
+/* SUBSCRIPTIONS TABLE */
+.subscriptions__sub-div-table {
+    width: 80%;
+    margin: 5em auto 10em auto;
+    border: 1px solid #dededf;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.sub-div-table__sub-table { 
+    height: 100%;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.th {
+    text-align: center;
+    position: relative;
+}
+
+.th::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    height: 1px;
+    background-color: #c5c5c5;
+}
+
+.th:first-child:after {
+    display: none;
+}
+
+.th--fr-col {
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 35px;
+    letter-spacing: 1px;
+}
+
+.th--fr-col h2 {
+    font-size: 38px;
+}
+
+.th--fr-col p {
+    font-size: 20px;
+}
+
+.th__plan-name {
+    font-size: 17px;
+    margin-bottom: .4em;
+}
+
+.th__plan-price {
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-bottom: .3em;
+}
+
+.th__plan-price span {
+    font-size: 17px;
+}
+
+.th__plan-for {
+    font-size: 14px;
+    margin-bottom: 1em;
+    color: #9c9c9c;
+}
+
+.th__plan-btn {
+    background-color: #8a6be9;
+    color: #fff;
+    border: 2px solid #8a6be9;
+    font-size: 16px;
+    padding: .4em .8em;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    transition: all .3s;
+}
+
+.th__plan-btn:hover {
+    background-color: #fff;
+    color: #8a6be9;
+}
+
+.td {
+    padding: .6em;
+    text-align: center;
+    font-weight: 500;
+    position: relative;
+}
+
+.td::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 9px;
+    width: 1px;
+    height: 20px;
+    background-color: #c5c5c5;
+}
+
+.td:first-child {
+    border-radius: 10px 0px 0px 10px;   
+}
+
+.td:last-child {
+    border-radius: 0px 10px 10px 0px;   
+}
+
+.td:last-child::after {
+    display: none;
+}
+
+tr:nth-child(even) {
+    background-color: #dbd5fa;
+}
+
+.td-fr-col {
+    text-align: left;
+    
+}

@@ -12,7 +12,7 @@ export function Nav() {
                 </div>
                 <NavLink to={"/"} className="nav-main__a"><p>Hygiene</p></NavLink>
                 <div className="nav__div nav-div-two">
-                    <NavLink to={"/"} className="nav__a"><p>Абонаменти</p></NavLink>
+                    <NavLink to={"/subscriptions"} className="nav__a"><p>Абонаменти</p></NavLink>
                     <NavLink to={"/"} className="nav__a"><p>За нас</p></NavLink>
                 </div>
             </nav>
