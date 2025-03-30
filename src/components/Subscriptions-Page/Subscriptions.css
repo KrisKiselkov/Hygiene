@@ -33,7 +33,7 @@
 
 /* SUBSCRIPTIONS TABLE */
 .subscriptions__sub-div-table {
-    width: 80%;
+    width: 90%;
     margin: 5em auto 10em auto;
     border: 1px solid #dededf;
     padding: 1em;
@@ -83,14 +83,14 @@
 }
 
 .th__plan-name {
-    font-size: 17px;
-    margin-bottom: .4em;
+    font-size: 19px;
+    margin-bottom: .5em;
 }
 
 .th__plan-price {
-    font-size: 30px;
+    font-size: 35px;
     letter-spacing: 1px;
-    margin-bottom: .3em;
+    margin-bottom: .5em;
 }
 
 .th__plan-price span {
@@ -98,7 +98,7 @@
 }
 
 .th__plan-for {
-    font-size: 14px;
+    font-size: 15px;
     margin-bottom: 1em;
     color: #9c9c9c;
 }

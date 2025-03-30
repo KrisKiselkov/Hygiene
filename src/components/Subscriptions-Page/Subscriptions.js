@@ -1,5 +1,6 @@
-import "./Subscriptions.css"
+import "./Subscriptions.css";
 import { Nav } from "../Nav/Nav";
+import { Footer } from "../Footer/Footer";
 
 
 export function Subscriptions() {
@@ -85,6 +86,8 @@ export function Subscriptions() {
                     </table>
                 </div>
             </section>
+
+            <Footer />
         </>
     );
 }
