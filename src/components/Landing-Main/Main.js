@@ -1,7 +1,6 @@
 import './Main.css';
 import { productsArray } from '../ProductsArray';
 import { Link } from 'react-router-dom';
-import { Footer } from '../Footer/Footer';
 
 
 export function Main() {

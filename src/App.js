@@ -9,6 +9,7 @@ import { BlogPage } from './components/Blog-Page/BlogPage';
 import { Product } from './components/Product-Page/Product';
 import Layout from './components/Layout';
 import { Subscriptions } from './components/Subscriptions-Page/Subscriptions';
+import { AboutUs } from './components/About-Us/AboutUs';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:id" element={<BlogPage />} />
         <Route path='/subscriptions' element={<Subscriptions />} />
+        <Route path='/about-us' element={<AboutUs />} />
     </Route>
   ));
 
