@@ -1,5 +1,6 @@
 import './AboutUs.css';
 import { Nav } from '../Nav/Nav';
+import { NewsLetter } from '../NewsLetter';
 import { Footer } from '../Footer/Footer';
 
 
@@ -76,7 +77,113 @@ export function AboutUs() {
                         <h2 className='ab-us-team__h2'><span>Поддържаният</span> ни екип.</h2>
                         <div className='ab-us-team__ab-us-team-divs'>
                             <div className='ab-us-team-divs__team-div'>
-                                
+                                <figure className='team-div__figure'><img src={require('../../images/IMG_20241019_181851432.jpg')}></img></figure>
+                                <div className='team-div__team-emp-txt'>
+                                    <p className='team-emp-txt__name-p'>Kristian Kiselkov</p>
+                                    <p className='team-emp-txt__pos-p'>Founder & CEO</p>
+                                </div>
+                            </div>
+
+                            <div className='ab-us-team-divs__team-div'>
+                                <figure className='team-div__figure'><img src={require('../../images/IMG_20241019_181851432.jpg')}></img></figure>
+                                <div className='team-div__team-emp-txt'>
+                                    <p className='team-emp-txt__name-p'>Kristian Kiselkov</p>
+                                    <p className='team-emp-txt__pos-p'>Founder & CEO</p>
+                                </div>
+                            </div>
+
+                            <div className='ab-us-team-divs__team-div'>
+                                <figure className='team-div__figure'><img src={require('../../images/IMG_20241019_181851432.jpg')}></img></figure>
+                                <div className='team-div__team-emp-txt'>
+                                    <p className='team-emp-txt__name-p'>Kristian Kiselkov</p>
+                                    <p className='team-emp-txt__pos-p'>Founder & CEO</p>
+                                </div>
+                            </div>
+
+                            <div className='ab-us-team-divs__team-div'>
+                                <figure className='team-div__figure'><img src={require('../../images/IMG_20241019_181851432.jpg')}></img></figure>
+                                <div className='team-div__team-emp-txt'>
+                                    <p className='team-emp-txt__name-p'>Kristian Kiselkov</p>
+                                    <p className='team-emp-txt__pos-p'>Founder & CEO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='about-us-main__ab-us-contact'>
+                        <div className='ab-us-contact__contact-form'>
+                            <div className='contact-form__con-form-fr-name'>
+                                <label className='con-form__label'>Име</label>
+                                <input className='con-form-fr-name__input' type='text' placeholder='Име...'></input>
+                            </div>
+                            <div className='contact-form__con-form-lst-name'>
+                                <label className='con-form__label'>Фамилия</label>
+                                <input className='con-form-lst-name__input' type='text' placeholder='Фамилия...'></input>       
+                            </div>
+
+                            <div className='contact-form__con-form-number'>
+                                <label className='con-form__label'>Телефон</label>
+                                <input className='con-form-number__input' type='text' placeholder='Телефон...'></input>
+                            </div>
+
+                            <div className='contact-form__con-form-email'>
+                                <label className='con-form__label'>Имейл</label>
+                                    <input className='con-form-email__input' type='text' placeholder='Имейл...'></input>
+                            </div>
+                            <div className='contact-form__con-form-message'>
+                                <label className='con-form__label'>Съобщение</label>
+                                <textarea className='con-form-message__input' placeholder='Съобщение...'></textarea>
+                            </div>
+
+                            <button className='contact-form__con-form-btn'>
+                                Изпрати
+                            </button>
+                        </div>
+
+                        <div className='ab-us-contact__contact-socials'>
+                            <div className='contact-socials__socials'>
+                                <h3 className='socials__h3'>Последвайте ни.</h3>
+
+                                <div className='socials__socials-icons socials-icons'>
+                                    <figure className='socials-icons__figure'>
+                                        <img src={require('../../images/facebook.png')}></img>
+                                    </figure>
+                                    <p className='socials-icons__p'>@hygienebulgaria</p>
+                                </div>
+
+                                <div className='socials__socials-icons socials-icons'>
+                                    <figure className='socials-icons__figure'>
+                                        <img src={require('../../images/instagram.png')}></img>
+                                    </figure>
+                                    <p className='socials-icons__p'>@hygienebulgaria</p>
+                                </div>
+
+                                <div className='socials__socials-icons socials-icons'>
+                                    <figure className='socials-icons__figure'>
+                                        <img src={require('../../images/x.png')}></img>
+                                    </figure>
+                                    <p className='socials-icons__p'>@hygienebulgaria</p>
+                                </div>
+                            </div>
+
+                            <div className='contact-socials__call-us'>
+                                <h3 className='socials__h3'>Свържете се с нас.</h3>
+                                <div className='call-us-div socials-icons'>
+                                    <figure className='socials-icons__figure'>
+                                        <img src={require('../../images/phone-call.png')}></img>
+                                    </figure>
+                                    <p className='socials-icons__p'>+359 899 818 526</p>
+                                </div>
+                            </div>
+
+                            <div className='contact-socials__visit-us'>
+                                <h3 className='socials__h3'>Посетете ни.</h3>
+                                <div className='visit-us-div socials-icons'>
+                                    <figure className='socials-icons__figure'>
+                                        <img src={require('../../images/location.png')}></img>
+                                    </figure>
+                                    <p className='socials-icons__p'>ул. Братя Шкорпил 13, Варна, България</p>
+                                </div>
                             </div>
                         </div>
                     </div>
