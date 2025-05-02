@@ -104,7 +104,7 @@
   height: 3.2em;
   padding: .2em;
   background-color: #ffffffaf;
-  border-radius: 50%;
+  border-radius: 10px;
   margin-right: .7em;
   display: flex;
   align-items: center;
@@ -113,6 +113,10 @@
 
 .pb-view-prod-div__figure img {
   width: 80%;
+}
+
+.pb-view-prod-div__p {
+  
 }
 
 
@@ -143,7 +147,7 @@
   width: 4.2em;
   padding: .2em;
   background-color: #ffffffaf;
-  border-radius: 50%;
+  border-radius: 10px;
   margin-right: .7em;
   display: flex;
   align-items: center;
@@ -152,10 +156,6 @@
 
 .pb-view-prod-div__figure--frthdiv img {
   width: 80%;
-}
-
-.pb-view-prod-div--frthdiv .pb-view-prod-div__p {
-  
 }
 
 

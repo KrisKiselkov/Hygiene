@@ -1,7 +1,7 @@
 import './BlogPage.css';
 import { Nav } from '../Nav/Nav';
 import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { blogsArrays } from './BlogsArray';
 import { Footer } from '../Footer/Footer';
 
@@ -59,19 +59,19 @@ export function BlogPage() {
                         </p>
                         <figure className='blog-content-text__figure'><img src={imageOne} alt='image'></img></figure>
 
-                        <h3 className='blog-content-text__h3'>{topicTwo}</h3>
+                        <h3 className='blog-content-text__h3' id='topic-two'>{topicTwo}</h3>
                         <p className='blog-content-text__p'>
                             {textTwo}
                         </p>
                         <figure className='blog-content-text__figure'><img src={imageTwo} alt='image'></img></figure>
 
-                        <h3 className='blog-content-text__h3'>{topicThree}</h3>
+                        <h3 className='blog-content-text__h3' id='topic-three'>{topicThree}</h3>
                         <p className='blog-content-text__p'>
                             {textThree}
                         </p>
                         <figure className='blog-content-text__figure'><img src={imageThree} alt='image'></img></figure>
 
-                        <h3 className='blog-content-text__h3'>Заключение</h3>
+                        <h3 className='blog-content-text__h3' id='topic-four'>Заключение</h3>
                         <p className='blog-content-text__p'>
                             {conclusion}
                         </p>
@@ -79,21 +79,29 @@ export function BlogPage() {
 
                     <div className='blog-content__blog-content-nav'>
                         <ul className='blog-content-nav__blog-nav-ul'>
-                            <li className='blog-nav-ul__li'>
-                                <p>Въведиение</p>
-                            </li>
+                            
+                                <li className='blog-nav-ul__li'>
+                                    <p>Въведиение</p>
+                                </li>
+                            
 
-                            <li className='blog-nav-ul__li'>
-                                <p>{topicTwo}</p>
-                            </li>
+                            <a href="#topic-two">
+                                <li className='blog-nav-ul__li'>
+                                    <p>{topicTwo}</p>
+                                </li>
+                            </a>
 
-                            <li className='blog-nav-ul__li'>
-                                <p>{topicThree}</p>
-                            </li>
+                            <a href="#topic-three">
+                                <li className='blog-nav-ul__li'>
+                                    <p>{topicThree}</p>
+                                </li>
+                            </a>
 
-                            <li className='blog-nav-ul__li'>
-                                <p>Заключение</p>
-                            </li>
+                            <a href="#topic-four">
+                                <li className='blog-nav-ul__li'>
+                                    <p>Заключение</p>
+                                </li>
+                            </a>
                         </ul>
 
                         <hr className='blog-content-nav__hr'></hr>

@@ -155,7 +155,19 @@
 .spez-right-blocks__spez-block {
     height: 48%;
     background-color: #8a6be9;
-    border-radius: 10px;
+    border-radius: 10px;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spez-block__center-content {
+    text-align: center;
+}
+
+.spez-block__p {
+    color: #fff;
+    font-size: 18px;
 }
 
 .spez-block--fr-fth {
@@ -197,9 +209,20 @@
     overflow: hidden;
 }
 
+.ab-us-team-divs__team-div:hover {
+    .team-div__figure img {
+        scale: 1.05;
+    }
+
+    .team-div__team-emp-txt {
+        color: #8a6be9;
+    }
+}
+
 .team-div__figure {
     width: 100%;
-    height: 80%;
+    height: 78%;
+    overflow: hidden;
 }
 
 .team-div__figure img {
@@ -207,13 +230,15 @@
     height: 100%;
     object-fit: cover;
     object-position: 0em -6em;
+    transition: scale .2s;
 }
 
 .team-div__team-emp-txt {
-    height: 20%;
+    height: 22%;
     text-align: center;
     position: relative;
-    top: .4em;
+    top: .7em;
+    transition: color .2s;
 }
 
 .team-emp-txt__name-p {
@@ -223,7 +248,12 @@
 
 
 /* CONTACT FORM */
-.about-us-main__ab-us-contact {
+.about-us-main__ab-us-contact-section {
+    height: auto;
+    width: 100%;
+}
+
+.ab-us-contact-section__ab-us-contact {
     width: 90%;
     height: auto;
     margin: 0 auto;
@@ -302,14 +332,21 @@
     padding: .5em;
     background-color: #8a6be9;
     border-radius: 10px;
-    border: 1px solid #8a6be9;
+    border: 2px solid #8a6be9;
     color: #fff;
     font-weight: 600;
     font-size: 17px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.contact-form__con-form-btn:hover {
+    background-color: #fff;
+    color: #8a6be9;
 }
 
 .ab-us-contact__contact-socials {
-    width: 30%;
+    width: 35%;
     height: auto;
 }
 
@@ -325,6 +362,11 @@
     display: flex;
     gap: .7em;
     align-items: center;
+}
+
+.socials-icons__p:hover {
+    color: #8a6be9;
+    cursor: pointer;
 }
 
 .socials-icons__figure {

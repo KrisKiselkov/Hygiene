@@ -17,13 +17,13 @@
 }
 
 .product-range__h2 {
-    text-transform: uppercase;
+    margin-bottom: 1.8em;
 }
 
 .product-range__product-list {
     display: flex;
     justify-content: space-between;
-    margin-top: 2.2em;
+    margin-bottom: 5em;
 }
 
 .product-list__product-list-div {
@@ -32,6 +32,12 @@
     border-radius: 10px;
     background-size: 100% 100%;
     overflow: hidden;
+    transition: all .3s ease;
+}
+
+.product-list__product-list-div:hover {
+    transform: scale(1.03);
+    background-size: 110% 110%;
 }
 
 .product-list-div--body-products {
@@ -73,7 +79,6 @@
     display: flex;
     align-items: center;
     justify-content: center;  
-    margin-top: 5em;
     gap: 5.5%;
 }
 
@@ -113,6 +118,7 @@
     line-height: 30px;
     font-size: 17px;
     font-weight: 500;
+    text-align: justify;
 }
 
 .explore-text-div__explore-btn {
@@ -123,7 +129,7 @@
     padding: .5em .5em .5em 1.2em;
     gap: .8em;
     border: none;
-    border-radius: 30px;
+    border-radius: 10px;
     font-weight: 500;
     font-size: 15px;
 }
@@ -132,7 +138,7 @@
     height: 2em;
     width: 2em;
     background-color: #fff;
-    border-radius: 30px;
+    border-radius: 10px;
 }
 
 .explore-btn__figure img {
@@ -282,33 +288,32 @@ strong {
     overflow: hidden;
 }
 
-.div-graph__fr-graphs {
+.div-graph__graph-fill {
+    height: 100%;
+}
+
+.graph-fill__fr-graphs {
     background-color: #CAE299;
-    height: 100%;
-    width: 100%;
+    
 }
 
-.div-graph__sc-graphs {
+.graph-fill__sc-graphs {
     background-color: #EBC89D;
-    height: 100%;
-    width: 100%;
 }
 
-.div-graph__th-graphs {
+.graph-fill__th-graphs {
     background-color: #F1F2D5;
-    height: 100%;
-    width: 100%;
 }
 
 
 /* RATINGS SECTION */
 .landing-main__ratings {
-    margin: 3em 0em;
+    margin: 3em auto;
+    width: 90%;
 }
 
 .ratings__h2 {
     position: relative;
-    left: 5%;
     margin-bottom: 2em;
     width: fit-content;
 }
@@ -316,7 +321,7 @@ strong {
 .ratings__ratings-section {
     display: flex;
     position: relative;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     gap: 2em;
     overflow-y: hidden;
@@ -429,4 +434,120 @@ strong {
 
 .why-blocks__why-block-div p {
     width: 65%;
+}
+
+
+
+/* MEDIA SCREEN */
+@media screen and (max-width: 1024px) {
+    .explore-img-divs__img-div {
+        height: 15.5em;
+        width: 45%;
+        border-radius: 10px;
+    }
+
+    .mb-products__product-div {
+        flex: 0 0 calc(100% / 4);
+    }
+    
+    .fh-graph__p {
+        font-size: 29px;
+        line-height: 48px;
+    }
+
+    .landing-main__why-choose {
+        height: 25.5em;
+    }
+    
+    .why-choose__h2 {
+        text-transform: none;
+    }
+    
+    .why-choose__why-blocks {
+        display: block;
+        overflow: hidden;
+        width: 50%;
+        top: 6em;        
+    }
+
+    .why-blocks__why-block-div:nth-child(2) {
+        margin: 0 auto 1em auto;
+    }
+
+    .why-blocks__why-block-div:last-child {
+        float: right;
+        margin: 0;
+    }
+    
+    .why-blocks__why-block-div {
+        width: 13em;
+        margin-bottom: 1em;
+    }    
+}
+
+@media screen and (max-height: 768px) {
+    .product-range__h2 {
+        margin-bottom: 1.2em;
+    }
+    
+    .product-range__product-list {
+        row-gap: 1em;
+        flex-wrap: wrap;
+        margin-bottom: 5em;
+    }
+    
+    .product-list__product-list-div {
+        width: 100%;
+        background-size: cover;
+    }
+
+    .product-list__product-list-div:hover {
+        background-size: cover;
+    }
+
+    .product-range__explore-more {
+        gap: 4%;
+    }
+    
+    .explore-more__explore-img-divs {
+        width: 45%;
+    }
+
+    .explore-img-divs__img-div {
+        height: 15em;
+    }
+    
+    .explore-more__explore-text-div {
+        line-height: 25px;
+        font-size: 16px;
+    }
+    
+    .most-bought__mb-products {
+        gap: 1em;
+        width: 100%;
+    }
+    
+    .mb-products__product-div {
+        flex: 0 0 calc(115% / 4);
+    }
+
+    .landing-main__fh-graph {
+        height: auto;
+        padding: 3em 0em;
+    }
+    
+    .fh-graph__content {
+        display: block;
+    }
+    
+    .fh-graph__p {
+        text-align: center;
+        margin-bottom: .3em;
+    }
+    
+    .fh-graph__graphs {
+        width: 100%;
+    }
+    
+    
 }
