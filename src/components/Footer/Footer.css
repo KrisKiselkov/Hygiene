@@ -4,11 +4,11 @@
     color: #fff;
     height: 22em;
     width: 100%;
+    padding: 4em;
 }
 
 .footer__footer-content {
     display: flex;
-    padding: 4em;
     gap: 8%;
 }
 
