@@ -126,8 +126,6 @@
   height: 40%;
   background-color: #EBC89D;
   padding: 1em;
-  display: flex;
-  position: relative;
 }
 
 .pb-div-text__h3--frthdiv {
@@ -139,12 +137,11 @@
 
 .pb-view-prod-div--frthdiv {
   position: relative;
-  display: flex;
-  align-items: center;
 }
 
 .pb-view-prod-div--frthdiv .pb-view-prod-div__figure {
-  width: 4.2em;
+  width: 3.2em;
+  height: 3.2em;
   padding: .2em;
   background-color: #ffffffaf;
   border-radius: 10px;
@@ -269,4 +266,10 @@
   width: 100%;
   margin: 0 auto;
   margin-bottom: 3em;
+}
+
+
+/* MEDIA QUERY */
+@media screen and (max-width: 1024px) {
+  
 }

@@ -66,6 +66,7 @@
 .product-main__product-info-div {
     padding: 0em 1em;
     width: 48%;
+    position: relative;
 }
 
 .product-info-div__brand-p {
@@ -134,6 +135,11 @@
     line-height: 20px;
 }
 
+.product-info-div__pos-bottom {
+    position: absolute;
+    width: 98%;
+}
+
 .product-size-div__p {
     font-weight: bold;
     margin-bottom: 1.6%;
@@ -154,7 +160,7 @@
     display: flex;
     gap: 2%;
     width: 100%;
-    height: 10.7%;
+    height: 3em;
     margin-bottom: 3%;
 }
 
@@ -365,14 +371,15 @@
     height: 100%;
     background-color: #0000004b;
     z-index: 2;
+    position: relative;
 }
 
 .product-signup-banner__signup-banner-content {
     color: #fff;
     width: 90%;
-    margin: 0 auto;
-    position: relative;
-    top: 9.8em;
+    position: absolute;
+    left: 5%;
+    bottom: 7%;
 }
 
 .signup-banner-content__h2 {
@@ -389,7 +396,7 @@
 .signup-banner-content__news-letter {
   display: flex;
   height: 4em;
-  width: 30em;
+  width: 85%;
   border-radius: 12px;
   border: 2px solid;
 }
@@ -417,7 +424,6 @@
   top: .4em;
   height: 3.1em;
   width: 30%;
-  text-transform: uppercase;
   background-color: #8a6be9;
   opacity: .8;
   border-radius: 9px;
@@ -433,4 +439,67 @@
 
 #signup-banner-content__inp-btn:hover {
     opacity: 1;
+}
+
+
+/* MEDIA QUERY */
+@media screen and (max-width: 1024px) {
+    .signup-banner-content__news-letter {
+        width: 90%;
+    }
+
+    .product-info-div__pos-bottom {
+        position: absolute;
+        width: 96%;
+    }
+    
+    .product-icons-div__icon-div {
+        width: 17%;
+        text-align: center;
+    }
+    
+    .icon-div__figure img {
+        height: 85%;
+    }
+    
+    
+    /* PRODUCT DETAILS */
+    .product__product-details {
+        display: flex;
+        gap: 3em;
+        margin-bottom: 2.7em;
+    }
+    
+    
+    .product-details__details-div {
+        width: 50%;
+        border-radius: 10px;
+        
+        padding: 1em 1.1em;
+    }
+    
+    .product-details__htu-product::after {
+        content: "";
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 105.5%;
+        right: 0;
+        width: 1.5px;
+        height: 100%;
+        background-color: #8a6be9;
+    }
+    
+    .details-div__main-p {
+        font-size: 19px;
+        padding-bottom: .5em;
+        margin-bottom: .5em;
+        border-bottom: 2px solid #8a6be9;
+        font-weight: 500;
+    }
+    
+    .details-div__sec-p {
+        text-align: justify;
+        line-height: 22px;
+    }
 }

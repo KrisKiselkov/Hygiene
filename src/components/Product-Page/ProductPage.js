@@ -112,40 +112,42 @@ export function ProductPage() {
                         Готови ли сте да вдигнете стандартите на вашата хигиенна рутина? Не се колебайте повече, разгледайте нашата селекция от продукти и изберете перфектното решение за вас. Насладете се на бърза доставка за безпроблемно пазаруване.
                         </p>
 
-                        <div className="product-info-div__product-size-div">
-                            <p className="product-size-div__p">Количество:</p>
-                            
-                            <button className="product-size-div__btn">100 мл</button>
-                        </div>
-
-                        <div className="product-info-div__product-atc-div">
-                            <div className="product-atc-div__product-num-div">
-                                <div className="product-num-div__min" onClick={() => setProdNum(num => num -= 1)}><p>-</p></div>
-                                <p className="product-num-div__num">{prodNum}</p>
-                                <div className="product-num-div__min" onClick={() => setProdNum(num => num += 1)}><p>+</p></div>
-                            </div>
-                            <button className='product-atc-div__atc-btn'>Добавете в количката</button>
-                        </div>
-
-                        <div className="product-info-div__product-icons-div">
-                            <div className="product-icons-div__icon-div">
-                                <figure className="icon-div__figure"><img src={require('../../images/experiment_17dp_181818_FILL0_wght400_GRAD0_opsz20.png')}></img></figure>
-                                <p className="icon-div__p">Safe & <br></br>Non-Toxic</p>
+                        <div className="product-info-div__pos-bottom">
+                            <div className="product-info-div__product-size-div">
+                                <p className="product-size-div__p">Количество:</p>
+                                
+                                <button className="product-size-div__btn">100 мл</button>
                             </div>
 
-                            <div className="product-icons-div__icon-div">
-                                <figure className="icon-div__figure"><img src={require('../../images/experiment_17dp_181818_FILL0_wght400_GRAD0_opsz20.png')}></img></figure>
-                                <p className="icon-div__p">Safe & <br></br>Non-Toxic</p>
+                            <div className="product-info-div__product-atc-div">
+                                <div className="product-atc-div__product-num-div">
+                                    <div className="product-num-div__min" onClick={() => setProdNum(num => num -= 1)}><p>-</p></div>
+                                    <p className="product-num-div__num">{prodNum}</p>
+                                    <div className="product-num-div__min" onClick={() => setProdNum(num => num += 1)}><p>+</p></div>
+                                </div>
+                                <button className='product-atc-div__atc-btn'>Добавете в количката</button>
                             </div>
 
-                            <div className="product-icons-div__icon-div">
-                                <figure className="icon-div__figure"><img src={require('../../images/experiment_17dp_181818_FILL0_wght400_GRAD0_opsz20.png')}></img></figure>
-                                <p className="icon-div__p">Safe & <br></br>Non-Toxic</p>
-                            </div>
+                            <div className="product-info-div__product-icons-div">
+                                <div className="product-icons-div__icon-div">
+                                    <figure className="icon-div__figure"><img src={require('../../images/experiment_17dp_181818_FILL0_wght400_GRAD0_opsz20.png')}></img></figure>
+                                    <p className="icon-div__p">Safe & <br></br>Non-Toxic</p>
+                                </div>
 
-                            <div className="product-icons-div__icon-div">
-                                <figure className="icon-div__figure"><img src={require('../../images/experiment_17dp_181818_FILL0_wght400_GRAD0_opsz20.png')}></img></figure>
-                                <p className="icon-div__p">Safe & <br></br>Non-Toxic</p>
+                                <div className="product-icons-div__icon-div">
+                                    <figure className="icon-div__figure"><img src={require('../../images/experiment_17dp_181818_FILL0_wght400_GRAD0_opsz20.png')}></img></figure>
+                                    <p className="icon-div__p">Safe & <br></br>Non-Toxic</p>
+                                </div>
+
+                                <div className="product-icons-div__icon-div">
+                                    <figure className="icon-div__figure"><img src={require('../../images/experiment_17dp_181818_FILL0_wght400_GRAD0_opsz20.png')}></img></figure>
+                                    <p className="icon-div__p">Safe & <br></br>Non-Toxic</p>
+                                </div>
+
+                                <div className="product-icons-div__icon-div">
+                                    <figure className="icon-div__figure"><img src={require('../../images/experiment_17dp_181818_FILL0_wght400_GRAD0_opsz20.png')}></img></figure>
+                                    <p className="icon-div__p">Safe & <br></br>Non-Toxic</p>
+                                </div>
                             </div>
                         </div>
                     </div>
