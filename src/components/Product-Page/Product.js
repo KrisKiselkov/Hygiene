@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { productsArray } from '../ProductsArray';
 import { Link } from 'react-router-dom';
 import { Footer } from '../Footer/Footer';
+import { motion, useInView, useAnimation, useMotionValue, useSpring, useTransform, useMotionTemplate, AnimatePresence } from 'framer-motion';
 
 
 export function Product() {
@@ -38,7 +39,8 @@ export function Product() {
         feet: false, 
         accessories: false 
     });
-    const [ mobileFilter, setMobileFilter ] = useState(false);
+    
+
     const [ products, setProducts ] = useState(productsArray);
 
     const toggleCategory = (filter) => {
@@ -67,6 +69,10 @@ export function Product() {
         setProducts(filteredProducts);
     }, [category]);
 
+    //MOBILE FILTER STATES
+    const [ mobileFilter, setMobileFilter ] = useState(false); //mobile filter open/close state
+    const [ tempCategory, setTempCategory ] = useState(category); //temporary stores the checked categories before submitting 
+
     const openMobileFilter = () => {
         setMobileFilter(prev => {
             const newState = !prev;
@@ -74,6 +80,21 @@ export function Product() {
             return newState;
         });
     };
+
+    const handleTempCatChecked = (cat, checked) => {
+        if (checked) {
+            setTempCategory(prev => [...prev, cat]);
+        } else {
+            setTempCategory(prev => prev.filter(c => c !== cat));
+        }
+    };
+    
+    const handleFilterSubmit = (e) => {
+        e.preventDefault();
+        setCategory(tempCategory); // Apply filter
+        openMobileFilter()//close the filter popup
+    };
+    
     
 
     const allProducts = () => {
@@ -255,66 +276,79 @@ export function Product() {
                 </div>
             </section>
 
-            
-            <div className={`${mobileFilter ? 'product-page__pp-mobile-filter-popup' : 'product-page__pp-mobile-filter-popup--hidden'}`}>
-                <div className='pp-mobile-filter-popup__mobile-filter-section'>
-                    <div className='mobile-filter-section__mobile-filter-header'>
-                        <h2 className='mobile-filter-header__h2'>Избери тип продукт.</h2>
-                        <span className='mobile-filter-header__mobile-close' onClick={openMobileFilter}><figure className='mobile-close__figure'><img src={require('../../images/close_26dp_181818_FILL0_wght400_GRAD0_opsz24.png')}></img></figure></span>
-                    </div>
+            <AnimatePresence>
+                {mobileFilter && (
+                    <motion.div 
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: .3 }}
+                        
+                        className='product-page__pp-mobile-filter-popup'>
+                        <motion.div
+                        initial={{ opacity: .5, x: 100}}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        exit={{ opacity: .5, x: 100 }}
+                        transition={{ duration: .3 }} className='pp-mobile-filter-popup__mobile-filter-section'>
+                            <form className='mobile-filter-section__form' onSubmit={handleFilterSubmit}>
+                                <div className='mobile-filter-section__mobile-filter-header'>
+                                    <h2 className='mobile-filter-header__h2'>Избери тип продукт.</h2>
+                                    <span className='mobile-filter-header__mobile-close' onClick={() => {
+                                        setTempCategory(category);
+                                        openMobileFilter();
+                                    }}><figure className='mobile-close__figure'><img src={require('../../images/close_26dp_181818_FILL0_wght400_GRAD0_opsz24.png')}></img></figure></span>
+                                </div>
 
-                    <div className='mobile-filter-section__mobile-filter-main'>
-                        <label className='mobile-filter-main__mobile-filter-label'>
-                            <input type='checkbox' className='mobile-filter-label__input' onChange={(e) => {
-                                toggleCategory("dental");
-                                handleCatChecked("dental", e.target.checked);
-                            }}
-                            checked={category.includes("dental")}>
-                            </input>
-                            <span className='checkmark'></span>
-                            <p className='mobile-filter-label__p'>Дентална</p>
-                        </label>
+                                <div className='mobile-filter-section__mobile-filter-main'>
+                                    <label className='mobile-filter-main__mobile-filter-label'>
+                                        <input type='checkbox' className='mobile-filter-label__input' onChange={(e) => handleTempCatChecked("dental", e.target.checked) }
+                                        checked={tempCategory.includes("dental")}>
+                                        </input>
+                                        <span className='checkmark'></span>
+                                        <p className='mobile-filter-label__p'>Дентална</p>
+                                    </label>
 
-                        <label className='mobile-filter-main__mobile-filter-label'>
-                            <input type='checkbox' className='mobile-filter-label__input' onChange={(e) => {
-                                toggleCategory("face");
-                                handleCatChecked("face", e.target.checked);
-                            }}
-                            checked={category.includes("face")}>
-                            </input>
-                            <span className='checkmark'></span>
-                            <p className='mobile-filter-label__p'>За лице</p>
-                        </label>
+                                    <label className='mobile-filter-main__mobile-filter-label'>
+                                        <input type='checkbox' className='mobile-filter-label__input' onChange={(e) => handleTempCatChecked("face", e.target.checked) }
+                                        checked={tempCategory.includes("face")}>
+                                        </input>
+                                        <span className='checkmark'></span>
+                                        <p className='mobile-filter-label__p'>За лице</p>
+                                    </label>
 
-                        <label className='mobile-filter-main__mobile-filter-label'>
-                            <input type='checkbox' className='mobile-filter-label__input' onChange={(e) => {
-                                toggleCategory("body");
-                                handleCatChecked("body", e.target.checked);
-                            }}
-                            checked={category.includes("body")}>
-                            </input>
-                            <span className='checkmark'></span>
-                            <p className='mobile-filter-label__p'>За тяло</p>
-                        </label>
+                                    <label className='mobile-filter-main__mobile-filter-label'>
+                                        <input type='checkbox' className='mobile-filter-label__input' onChange={(e) => handleTempCatChecked("body", e.target.checked) }
+                                        checked={tempCategory.includes("body")}>
+                                        </input>
+                                        <span className='checkmark'></span>
+                                        <p className='mobile-filter-label__p'>За тяло</p>
+                                    </label>
 
-                        <label className='mobile-filter-main__mobile-filter-label'>
-                            <input type='checkbox' className='mobile-filter-label__input' onChange={(e) => {
-                                toggleCategory("accessories");
-                                handleCatChecked("accessories", e.target.checked);
-                            }}
-                            checked={category.includes("accessories")}>
-                            </input>
-                            <span className='checkmark'></span>
-                            <p className='mobile-filter-label__p'>За ходила</p>
-                        </label>
-                    </div>
+                                    <label className='mobile-filter-main__mobile-filter-label'>
+                                        <input type='checkbox' className='mobile-filter-label__input' onChange={(e) => handleTempCatChecked("feet", e.target.checked) }
+                                        checked={tempCategory.includes("feet")}>
+                                        </input>
+                                        <span className='checkmark'></span>
+                                        <p className='mobile-filter-label__p'>За ходила</p>
+                                    </label>
 
-                    <div className='mobile-filter-section__mobile-filter-footer'>
+                                    <label className='mobile-filter-main__mobile-filter-label'>
+                                        <input type='checkbox' className='mobile-filter-label__input' onChange={(e) => handleTempCatChecked("accessories", e.target.checked) }
+                                        checked={tempCategory.includes("accessories")}>
+                                        </input>
+                                        <span className='checkmark'></span>
+                                        <p className='mobile-filter-label__p'>Аксесоари</p>
+                                    </label>
+                                </div>
 
-                    </div>
-                </div>
-            </div>
-
+                                <div className='mobile-filter-section__mobile-filter-footer'>
+                                    <button type='submit' className='mobile-filter-footer__btn'>Покажи 80 резултата</button>
+                                </div>
+                            </form>
+                        </motion.div>
+                    </motion.div>
+                    )}
+                </AnimatePresence>
             <Footer />
         </>
     );
