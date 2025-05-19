@@ -35,10 +35,10 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 24.6%;
+    height: 24.5%;
     background-color: #f0f0f07e;
     border: 1px solid #9c9c9c;
-    margin-bottom: 3px;
+    margin-bottom: 2%;
 }
 
 .product-all-img__figure img {
@@ -72,7 +72,7 @@
 .product-info-div__brand-p {
     text-transform: uppercase;
     margin-bottom: 1%;
-    color: #9c9c9c;
+    color: #646464;
     letter-spacing: 1px;
     font-weight: 800;
 }
@@ -484,5 +484,97 @@
 @media screen and (max-width: 768px) {
     .product-signup-banner__overlay {
         width: 100%;
+    }
+
+    .product__product-main {
+        flex-wrap: wrap;
+        height: fit-content;
+        padding: 1.7em;
+        row-gap: 1.7em;
+        margin-bottom: 2em;
+    }
+    
+    .product-main__product-img-div {
+        justify-content: center;
+        height: 36vh;
+        width: 100%;  
+    }
+    
+    .product-img-div__product-all-img {
+        width: 20%; 
+    }
+    
+    .product-all-img__figure img {
+        width: 60%;
+    }
+
+    .product-img-div__product-main-img {
+        width: 78%;
+    }
+
+    .product-main-img__figure img {
+        width: 60%;
+    }
+    
+    
+    .product-main__product-info-div {
+        width: 100%;
+        padding: 0em;
+    }
+
+    .product-info-div__brand-p {
+        font-size: 15px;
+    }
+    
+    .product-info-div__h2 {
+        font-size: 24px;
+    }
+    
+    .product-rating__figure {
+        width: 20%;
+    }
+    
+    .product-price-div__new-price {
+        font-size: 22px;
+    }
+    
+    .product-price-div__old-price {
+        font-size: 18px;
+    }
+    
+    .product-info-div__desc-p {
+        margin: 2% 0%;
+    }
+    
+    .product-info-div__pos-bottom {
+        position: relative;
+        width: 100%;
+    }
+    
+    .product-info-div__product-icons-div {
+        height: 5.5em;  
+    }
+
+
+    /* PRODUCT DETAILS */
+    .product__product-details {
+        gap: 1em;
+        margin-bottom: 1.7em;
+    }
+
+
+    /* YML SECTION */
+    .product__product-yml {
+        margin-bottom: 2em;
+    }
+
+
+    /* FAQ SECTION */
+    .product__product-faq {
+        margin-bottom: 2em;
+    }
+
+    .product-faq__faq-div {
+        width: 90%;
     }
 }
