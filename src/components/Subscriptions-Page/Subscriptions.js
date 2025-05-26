@@ -85,6 +85,78 @@ export function Subscriptions() {
                         </tbody>
                     </table>
                 </div>
+
+                <div className="subscriptions__mobile-sub-div">
+                    <div className="mobile-sub-div__mb-sub-card">
+                        <h3 className="mb-sub-card__h3">Базов</h3>
+                        <p className="mb-sub-card__p">Подходящ за начинаещи.</p>
+                        <p className="mb-sub-card__price">$14.99<span>/мес.</span></p>
+
+                        <hr className="mb-sub-card__hr"></hr>
+
+                        <p className="mb-sub-card__p-include">Какво включва?</p>
+
+                        <ul className="mb-sub-card__sub-card-ul">
+                            <li className="sub-card-ul__li"><img className="sub-card-ul__check" src={require('../../images/check_circle_32dp_181818_FILL0_wght400_GRAD0_opsz40.png')}></img> Продукти до 5</li>
+
+                            <li className="sub-card-ul__li"><img className="sub-card-ul__check" src={require('../../images/check_circle_32dp_181818_FILL0_wght400_GRAD0_opsz40.png')}></img> Продукти до 5</li>
+
+                            <li className="sub-card-ul__li"><img className="sub-card-ul__check" src={require('../../images/check_circle_32dp_181818_FILL0_wght400_GRAD0_opsz40.png')}></img> Продукти до 5</li>
+
+                            <li className="sub-card-ul__li"><img className="sub-card-ul__check" src={require('../../images/check_circle_32dp_181818_FILL0_wght400_GRAD0_opsz40.png')}></img> Продукти до 5</li>
+                        </ul>
+
+                        <button className="mb-sub-card__btn">Избери</button>
+                        <a className="mb-sub-card__a">Научете повече</a>
+                    </div>
+
+                    <div className="mobile-sub-div__mb-sub-card">
+                        <p className="mb-sub-card__popular">Популярно</p>
+                        <h3 className="mb-sub-card__h3">Напреднали</h3>
+                        <p className="mb-sub-card__p">Подходящ за напреднали.</p>
+                        <p className="mb-sub-card__price">$19.99<span>/мес.</span></p>
+
+                        <hr className="mb-sub-card__hr"></hr>
+
+                        <p className="mb-sub-card__p-include">Какво включва?</p>
+
+                        <ul className="mb-sub-card__sub-card-ul">
+                            <li className="sub-card-ul__li"><img className="sub-card-ul__check" src={require('../../images/check_circle_32dp_181818_FILL0_wght400_GRAD0_opsz40.png')}></img> Продукти до 10</li>
+
+                            <li className="sub-card-ul__li"><img className="sub-card-ul__check" src={require('../../images/check_circle_32dp_181818_FILL0_wght400_GRAD0_opsz40.png')}></img> Продукти до 10</li>
+
+                            <li className="sub-card-ul__li"><img className="sub-card-ul__check" src={require('../../images/check_circle_32dp_181818_FILL0_wght400_GRAD0_opsz40.png')}></img> Продукти до 10</li>
+
+                            <li className="sub-card-ul__li"><img className="sub-card-ul__check" src={require('../../images/check_circle_32dp_181818_FILL0_wght400_GRAD0_opsz40.png')}></img> Продукти до 10</li>
+                        </ul>
+
+                        <button className="mb-sub-card__btn mb-sub-card__btn--active">Избери</button>
+                        <a className="mb-sub-card__a">Научете повече</a>
+                    </div>
+
+                    <div className="mobile-sub-div__mb-sub-card">
+                        <h3 className="mb-sub-card__h3">Експерти</h3>
+                        <p className="mb-sub-card__p">Подходящ за експерти.</p>
+                        <p className="mb-sub-card__price">$29.99<span>/мес.</span></p>
+
+                        <hr className="mb-sub-card__hr"></hr>
+
+                        <p className="mb-sub-card__p-include">Какво включва?</p>
+
+                        <ul className="mb-sub-card__sub-card-ul">
+                            <li className="sub-card-ul__li"><img className="sub-card-ul__check" src={require('../../images/check_circle_32dp_181818_FILL0_wght400_GRAD0_opsz40.png')}></img> Продукти до 20</li>
+
+                            <li className="sub-card-ul__li"><img className="sub-card-ul__check" src={require('../../images/check_circle_32dp_181818_FILL0_wght400_GRAD0_opsz40.png')}></img> Продукти до 20</li>
+
+                            <li className="sub-card-ul__li"><img className="sub-card-ul__check" src={require('../../images/check_circle_32dp_181818_FILL0_wght400_GRAD0_opsz40.png')}></img> Продукти до 20</li>
+
+                            <li className="sub-card-ul__li"><img className="sub-card-ul__check" src={require('../../images/check_circle_32dp_181818_FILL0_wght400_GRAD0_opsz40.png')}></img> Продукти до 20</li>
+                        </ul>
+
+                        <button className="mb-sub-card__btn">Избери</button>
+                        <a className="mb-sub-card__a">Научете повече</a>
+                    </div>
+                </div>
             </section>
 
             <Footer />

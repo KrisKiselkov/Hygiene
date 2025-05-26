@@ -32,6 +32,10 @@
 
 
 /* SUBSCRIPTIONS TABLE */
+.subscriptions__mobile-sub-div {
+    display: none;
+}
+
 .subscriptions__sub-div-table {
     width: 90%;
     margin: 5em auto 10em auto;
@@ -156,4 +160,132 @@ tr:nth-child(even) {
 .td-fr-col {
     text-align: left;
     
+}
+
+
+
+/*MEDIA QUERY*/
+@media screen and (max-width: 768px) {
+    .sub-heading__sub-heading-text {
+        margin-top: 3em;
+    }
+
+    .sub-heading-text__h1 {
+        font-size: 30px;
+    }
+
+    .subscriptions__sub-div-table {
+        display: none;
+    }
+
+    .subscriptions__mobile-sub-div {
+        width: 100%;
+        height: auto;
+        margin: 3.5em auto 10em auto;
+        display: block;
+    }
+
+    .mobile-sub-div__mb-sub-card {
+        width: 50%;
+        height: auto;
+        border-radius: 10px;
+        border: 2px solid #8a6be9;
+        text-align: center;
+        margin: 0 auto;
+        padding: 1.5em 1em 1.7em 1em;
+        margin-bottom: 2em;
+    }
+
+    .mb-sub-card__popular {
+        position: relative;
+        width: fit-content;
+        margin: 0 auto;
+        margin-bottom: 1em;
+        background-color: #8a6be9;
+        color: #fff;
+        padding: .3em 1em;
+        border-radius: 6px;
+        font-weight: 600;
+    }
+
+    .mb-sub-card__h3 {
+        font-size: 20px;
+        margin-bottom: .3em;
+    }
+
+    .mb-sub-card__p {
+        margin-bottom: 1em;
+    }
+
+    .mb-sub-card__price {
+        font-size: 30px;
+        font-weight: 800;
+        margin-bottom: .5em;
+    }
+
+    .mb-sub-card__hr {
+        border: none;
+        height: 1px;
+        background-color: #646464;
+        margin-bottom: .7em;
+    }
+
+    .mb-sub-card__p-include {
+        text-align: left;
+        position: relative;
+        font-weight: 600;
+        left: .3em;
+        margin-bottom: .7em;
+    }
+
+    .mb-sub-card__sub-card-ul {
+        position: relative;
+        text-align: left;
+        margin-bottom: 1.2em;
+        list-style: none;
+    }
+
+    .sub-card-ul__li {
+        margin-bottom: .7em;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: .5em;
+    }
+
+    .mb-sub-card__btn {
+        font-size: 18px;
+        width: 100%;
+        padding: .8em 0;
+        border: 2px solid #8a6be9;
+        background-color: #fff;
+        color: #8a6be9;
+        font-weight: 600;
+        border-radius: 6px;
+        margin-bottom: 1.2em;
+        transition: all .3s;
+    }
+
+    .mb-sub-card__btn--active {
+        background-color: #8a6be9;
+        color: #fff;
+    }
+
+    .mb-sub-card__btn:hover {
+        background-color: #8a6be9;
+        color: #fff;
+    }
+
+    .mb-sub-card__btn--active:hover {
+        background-color: #fff;
+        color: #8a6be9;
+    }
+
+    .mb-sub-card__a {
+        text-decoration: underline;
+    }
+
+    .mb-sub-card__a:hover {
+        text-decoration: none;
+    }
 }

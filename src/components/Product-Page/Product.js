@@ -200,7 +200,7 @@ export function Product() {
                     </div>
                 </div>
 
-                <hr className='products-page__hr'></hr>
+                
 
                 <div className='products-page__pp-filter-products'>
                     <div className='pp-filter-products__pp-filter-section'>
