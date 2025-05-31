@@ -89,7 +89,7 @@ export function AboutUs() {
                         <h2 className='ab-us-team__h2'><span>Поддържаният</span> ни екип.</h2>
                         <div className='ab-us-team__ab-us-team-divs'>
                             <div className='ab-us-team-divs__team-div'>
-                                <figure className='team-div__figure'><img src={require('../../images/IMG_20241019_181851432.jpg')}></img></figure>
+                                <figure className='team-div__figure'></figure>
                                 <div className='team-div__team-emp-txt'>
                                     <p className='team-emp-txt__name-p'>Kristian Kiselkov</p>
                                     <p className='team-emp-txt__pos-p'>Founder & CEO</p>
@@ -97,7 +97,7 @@ export function AboutUs() {
                             </div>
 
                             <div className='ab-us-team-divs__team-div'>
-                                <figure className='team-div__figure'><img src={require('../../images/IMG_20241019_181851432.jpg')}></img></figure>
+                                <figure className='team-div__figure'></figure>
                                 <div className='team-div__team-emp-txt'>
                                     <p className='team-emp-txt__name-p'>Kristian Kiselkov</p>
                                     <p className='team-emp-txt__pos-p'>Founder & CEO</p>
@@ -105,7 +105,7 @@ export function AboutUs() {
                             </div>
 
                             <div className='ab-us-team-divs__team-div'>
-                                <figure className='team-div__figure'><img src={require('../../images/IMG_20241019_181851432.jpg')}></img></figure>
+                                <figure className='team-div__figure'></figure>
                                 <div className='team-div__team-emp-txt'>
                                     <p className='team-emp-txt__name-p'>Kristian Kiselkov</p>
                                     <p className='team-emp-txt__pos-p'>Founder & CEO</p>
@@ -113,7 +113,7 @@ export function AboutUs() {
                             </div>
 
                             <div className='ab-us-team-divs__team-div'>
-                                <figure className='team-div__figure'><img src={require('../../images/IMG_20241019_181851432.jpg')}></img></figure>
+                                <figure className='team-div__figure'></figure>
                                 <div className='team-div__team-emp-txt'>
                                     <p className='team-emp-txt__name-p'>Kristian Kiselkov</p>
                                     <p className='team-emp-txt__pos-p'>Founder & CEO</p>
