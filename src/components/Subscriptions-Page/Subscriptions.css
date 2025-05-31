@@ -289,3 +289,15 @@ tr:nth-child(even) {
         text-decoration: none;
     }
 }
+
+@media screen and (max-width: 648px) {
+    .mobile-sub-div__mb-sub-card {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 457px) {
+    .mobile-sub-div__mb-sub-card {
+        width: 90%;
+    }
+}
