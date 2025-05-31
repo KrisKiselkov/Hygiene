@@ -86,7 +86,7 @@ export function AboutUs() {
                     </div>
 
                     <div className='about-us-main__ab-us-team'>
-                        <h2 className='ab-us-team__h2'><span>Поддържаният</span> ни екип.</h2>
+                        <h3 className='ab-us-main-txt__h3'><span>Поддържаният</span> ни екип.</h3>
                         <div className='ab-us-team__ab-us-team-divs'>
                             <div className='ab-us-team-divs__team-div'>
                                 <figure className='team-div__figure'></figure>
@@ -123,7 +123,7 @@ export function AboutUs() {
                     </div>
 
                     <div className='about-us-main__ab-us-contact-section'>
-                        <h2 className='ab-us-team__h2'><span>Пиши ни</span>, не хапем.</h2>
+                        <h3 className='ab-us-main-txt__h3'><span>Пиши ни</span>, не хапем.</h3>
                         <div className='ab-us-contact-section__ab-us-contact'>
                             <div className='ab-us-contact__contact-form'>
                                 <div className='contact-form__con-form-fr-name'>

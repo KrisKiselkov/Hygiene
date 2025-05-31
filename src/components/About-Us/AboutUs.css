@@ -112,6 +112,7 @@
 .ab-us-main-txt__h3 {
     font-size: 24px;
     margin-bottom: .7em;
+    width: 80%;
 }
 
 .ab-us-main-txt__h3 span {
@@ -183,15 +184,6 @@
     height: auto;
     width: 100%;
     margin-bottom: 5em;
-}
-
-.ab-us-team__h2 {
-    font-size: 28px;
-    margin-bottom: 1.3em;
-}
-
-.ab-us-team__h2 span {
-    color: #8a6be9;
 }
 
 .ab-us-team__ab-us-team-divs {
@@ -443,10 +435,9 @@
         
     }
 
-    .spez-right-blocks__spez-block {
-        
+    .ab-us-main-txt__h3 {
+        font-size: 22px;
     }
-
 
     .about-us-main__ab-us-team {
         margin-bottom: 3em;

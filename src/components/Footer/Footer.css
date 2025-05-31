@@ -72,3 +72,12 @@
     list-style: none;
     line-height: 30px;
 }
+
+
+
+/* MEDIA QUERY */
+@media screen and (max-width: 542px) {
+    .footer-content__footer-links {
+        display: none;
+    }
+}
