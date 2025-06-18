@@ -284,6 +284,15 @@
         overflow: hidden;
         border-radius: 10px;
     }
+
+    .amb-user-date__figure {
+        width: 2.3em;
+        height: 2.3em;
+    }
+
+    .amb-user__p {
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width: 530px) {

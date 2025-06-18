@@ -46,7 +46,7 @@ export function Main() {
     return (
         <main className='landing-main'>
             <div className='landing-main__product-range'>
-                <h2 className='product-range__h2'>Нашата продуктова гама</h2>
+                <h2 className='main-h2 product-range__h2'>Нашата продуктова гама</h2>
                 <div className='product-range__product-list'>
                     <motion.div 
                     initial={{ opacity: 0, y: 50 }}
@@ -127,7 +127,7 @@ export function Main() {
                 transition={{ duration: 1 }}
                 viewport={{ once: true }}
                 className='landing-main__most-bought'>
-                <p className='most-bought__title-p'>Започни промяната към една <span>по-добра</span><br></br> твоя версия чрез <span>нас</span>.</p>
+                <p className='main-h2 most-bought__title-p'>Започни промяната към една <span>по-добра</span><br></br> твоя версия чрез <span>нас</span>.</p>
 
                 <div className='most-bought__mb-products'>
                     {mainProducts()}
@@ -136,7 +136,7 @@ export function Main() {
 
             <div className='landing-main__fh-graph'>
                 <div className='fh-graph__content'>
-                    <p className='fh-graph__p'>
+                    <p className='main-h2 fh-graph__p'>
                         Следването на всекидневна
                         <br></br>
                         <i><strong>хигиенна</strong> рутина</i>
@@ -191,7 +191,7 @@ export function Main() {
             </div>
 
             <div className='landing-main__ratings'>
-                <h2 className='ratings__h2'>Разгледай отзиви от наши клиенти</h2>
+                <h2 className='main-h2 ratings__h2'>Разгледай отзиви от наши клиенти</h2>
             
                 <div className='ratings__ratings-section'>
                     <div className='ratings__ratings-div'>
@@ -224,7 +224,7 @@ export function Main() {
             </div>
 
             <div className='landing-main__why-choose'>
-                <h2 className='why-choose__h2'>Защо да изберете нас?</h2>
+                <h2 className='main-h2 why-choose__h2'>Защо да изберете нас?</h2>
 
                 <div className='why-choose__why-blocks'>
                     <div className='why-blocks__why-block-div'>

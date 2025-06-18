@@ -8,8 +8,7 @@ export function Banner() {
         "вземи си душ.",
         "хапни нещо полезно.",
         "пий повече вода.",
-        "следвай рутина.",
-        "изгради си хигиенни навици."
+        "следвай хигиенна рутина."
     ];
 
     const [currentTextIndex, setCurrentTextIndex] = useState(0);

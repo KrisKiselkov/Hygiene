@@ -432,20 +432,27 @@
 
     .ab-us-spez-right__spez-right-blocks {
         height: 16em;
-        
     }
 
     .ab-us-main-txt__h3 {
         font-size: 22px;
     }
 
+
+    /* TEAM */
     .about-us-main__ab-us-team {
         margin-bottom: 3em;
         flex-direction: column;
     }
 
+    .ab-us-team__ab-us-team-divs {
+        gap: 2em;
+    }
+    
+
     .ab-us-team-divs__team-div {
-        width: 30%;
+        min-width: 30%;
+        max-width: 44%;
     }
     
     .ab-us-team__ab-us-team-divs {
@@ -476,5 +483,28 @@
     
     .contact-socials__visit-us {
         margin-bottom: 0em;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .ab-us-team-divs__team-div {
+        height: 14em;
+    }
+
+    .team-div__team-emp-txt {
+        font-size: 15px;
+        top: .4em;
+    }
+    
+    .team-emp-txt__name-p {
+        font-size: 16px;
+    }
+
+    .ab-us-team__ab-us-team-divs {
+        gap: 1.5em;
+    }
+
+    .spez-block__p {
+        font-size: 17px;
     }
 }

@@ -38,7 +38,7 @@ button {
   position: relative;
   top: 2em;
   height: 4em;
-  width: 30em;
+  width: 50%;
   background-color: #dbd5fa;
   border-radius: 12px;
 }
@@ -71,4 +71,33 @@ button {
   letter-spacing: .7px;
   margin: 0 auto;
   cursor: pointer;
+}
+
+
+/* MEDIA QUERY */
+@media screen and (max-width: 768px) {
+  .news-letter__sub-container {
+    width: 65%;
+  }
+
+  .news-letter__h2 {
+    font-size: 24px;
+  }
+  
+  #sub-container__inp-btn {
+    font-size: 15px;
+    top: 8px;
+  }
+  
+}
+
+@media screen and (max-width: 430px) {
+  .news-letter__sub-container {
+    width: 93%;
+  }
+  
+  #sub-container__inp-btn {
+    font-size: 14px;
+    top: px;
+  }
 }
