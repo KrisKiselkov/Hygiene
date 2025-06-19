@@ -463,7 +463,7 @@ body.no-scroll {
     margin-bottom: 2em;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 83vh;
+    height: 85vh;
     gap: 2% 0;
   }
 
@@ -540,7 +540,5 @@ body.no-scroll {
 }
 
 @media screen and (max-width: 552px){
-  .mb-products__product-div {
-    width: 90%;
-  }
+  
 }

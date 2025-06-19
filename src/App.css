@@ -44,8 +44,7 @@ button {
 }
 
 .news-letter__sub-container input {
-  margin-top: .3em;
-  height: 80%;
+  height: 100%;
   width: 66.3%;
   background-color: transparent;
   color: #fff;
@@ -77,11 +76,11 @@ button {
 /* MEDIA QUERY */
 @media screen and (max-width: 768px) {
   .news-letter__sub-container {
-    width: 65%;
+    width: 65%; 
   }
 
   .news-letter__h2 {
-    font-size: 24px;
+    font-size: 22px;
   }
   
   #sub-container__inp-btn {
@@ -91,13 +90,23 @@ button {
   
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 600px) {
   .news-letter__sub-container {
-    width: 93%;
+    width: 90%;
+    height: 3.5em;
+  }
+
+  .news-letter__sub-container input {
+    font-size: 15px;
   }
   
   #sub-container__inp-btn {
     font-size: 14px;
-    top: px;
+    top: 7px;
+    height: 3em;
+  }
+
+  .news-letter {
+    height: 11.5em;
   }
 }

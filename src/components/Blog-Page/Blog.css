@@ -296,6 +296,10 @@
 }
 
 @media screen and (max-width: 530px) {
+    .about-main-blog__arrow-figure {
+        display: none;
+    }
+
     .all-blogs-content__all-blogs-div {
         flex: 0 0 calc(90% / 1);
     }
