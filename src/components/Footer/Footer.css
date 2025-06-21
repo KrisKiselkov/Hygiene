@@ -77,6 +77,16 @@
 
 /* MEDIA QUERY */
 @media screen and (max-width: 542px) {
+    .footer {
+        height: auto;
+        padding: 2em;
+    }
+
+    .footer-content__footer-contacts {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
     .footer-content__footer-links {
         display: none;
     }

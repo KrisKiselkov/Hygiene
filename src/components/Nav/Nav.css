@@ -60,3 +60,11 @@ nav {
     left: 50%;
     transform: translateX(-50%);
 }
+
+
+/* MEDIA QUERY */
+@media (max-width: 768px) {
+    .nav__a {
+        display: none;
+    }
+}
