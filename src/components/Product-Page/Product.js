@@ -143,7 +143,7 @@ export function Product() {
                                 <div className='pb-scdiv-img-div__pb-scdiv-img-text'>
                                     <h3 className='pb-scdiv-img-text__h3'>Грижи се за себе си</h3>
 
-                                    <p className='pb-scdiv-img-text__p'>Разгледай новите ни продукти</p>
+                                    <p className='pb-scdiv-img-text__p'>Разгледайте новите ни продукти</p>
                                 </div>
                             </div>
                         </div>
