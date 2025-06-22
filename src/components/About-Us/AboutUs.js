@@ -1,6 +1,5 @@
 import './AboutUs.css';
 import { Nav } from '../Nav/Nav';
-import { NewsLetter } from '../NewsLetter';
 import { Footer } from '../Footer/Footer';
 
 
@@ -11,7 +10,7 @@ export function AboutUs() {
             <section className='about-us'>
                 <div className='about-us__about-us-heading'>
                     <div className='about-us__ab-us-head-content'>
-                        <figure className='ab-us-head-content__figure'><img src={require('../../images/skincare-ingredients.jpg')}></img></figure>
+                        <figure className='ab-us-head-content__figure'><img src={require('../../images/skincare-ingredients.jpg')} alt=''></img></figure>
                         <h2 className='ab-us-head-content__h2'>Запознайте се с <span>нас</span></h2>
                     </div>
                 </div>
@@ -23,7 +22,7 @@ export function AboutUs() {
                             <button className='ab-us-left__contact-btn'>
                                 Пиши ни
                                 <figure className='contact-btn__figure'>
-                                    <img src={require('../../images/arrow_forward_24dp_8A6BE9_FILL0_wght400_GRAD0_opsz24.png')}></img>
+                                    <img src={require('../../images/arrow_forward_24dp_8A6BE9_FILL0_wght400_GRAD0_opsz24.png')} alt=''></img>
                                 </figure>
                             </button>
                         </div>
@@ -56,28 +55,28 @@ export function AboutUs() {
                             <div className='ab-us-spez-right__spez-right-blocks'>
                                 <div className='spez-right-blocks__spez-block spez-block--fr-fth'>
                                     <div className='spez-block__center-content'>
-                                        <figure className='spez-block__figure'><img src={require('../../images/emoji_objects_50dp_FFF_FILL0_wght400_GRAD0_opsz48.png')}></img></figure>
+                                        <figure className='spez-block__figure'><img src={require('../../images/emoji_objects_50dp_FFF_FILL0_wght400_GRAD0_opsz48.png')} alt=''></img></figure>
                                         <p className='spez-block__p'>Иновативни продукти</p>
                                     </div>
                                 </div>
 
                                 <div className='spez-right-blocks__spez-block spez-block--sc-trh'>
                                     <div className='spez-block__center-content'>
-                                        <figure className='spez-block__figure'><img src={require('../../images/emoji_objects_50dp_FFF_FILL0_wght400_GRAD0_opsz48.png')}></img></figure>
+                                        <figure className='spez-block__figure'><img src={require('../../images/emoji_objects_50dp_FFF_FILL0_wght400_GRAD0_opsz48.png')} alt=''></img></figure>
                                         <p className='spez-block__p'>Иновативни продукти</p>
                                     </div>
                                 </div>
 
                                 <div className='spez-right-blocks__spez-block spez-block--sc-trh'>
                                     <div className='spez-block__center-content'>
-                                        <figure className='spez-block__figure'><img src={require('../../images/emoji_objects_50dp_FFF_FILL0_wght400_GRAD0_opsz48.png')}></img></figure>
+                                        <figure className='spez-block__figure'><img src={require('../../images/emoji_objects_50dp_FFF_FILL0_wght400_GRAD0_opsz48.png')} alt=''></img></figure>
                                         <p className='spez-block__p'>Иновативни продукти</p>
                                     </div>
                                 </div>
 
                                 <div className='spez-right-blocks__spez-block spez-block--fr-fth'>
                                     <div className='spez-block__center-content'>
-                                        <figure className='spez-block__figure'><img src={require('../../images/emoji_objects_50dp_FFF_FILL0_wght400_GRAD0_opsz48.png')}></img></figure>
+                                        <figure className='spez-block__figure'><img src={require('../../images/emoji_objects_50dp_FFF_FILL0_wght400_GRAD0_opsz48.png')} alt=''></img></figure>
                                         <p className='spez-block__p'>Иновативни продукти</p>
                                     </div>
                                 </div>
@@ -160,21 +159,21 @@ export function AboutUs() {
 
                                     <div className='socials__socials-icons socials-icons'>
                                         <figure className='socials-icons__figure'>
-                                            <img src={require('../../images/facebook.png')}></img>
+                                            <img src={require('../../images/facebook.png')} alt=''></img>
                                         </figure>
                                         <p className='socials-icons__p'>@hygienebulgaria</p>
                                     </div>
 
                                     <div className='socials__socials-icons socials-icons'>
                                         <figure className='socials-icons__figure'>
-                                            <img src={require('../../images/instagram.png')}></img>
+                                            <img src={require('../../images/instagram.png')} alt=''></img>
                                         </figure>
                                         <p className='socials-icons__p'>@hygienebulgaria</p>
                                     </div>
 
                                     <div className='socials__socials-icons socials-icons'>
                                         <figure className='socials-icons__figure'>
-                                            <img src={require('../../images/x.png')}></img>
+                                            <img src={require('../../images/x.png')} alt=''></img>
                                         </figure>
                                         <p className='socials-icons__p'>@hygienebulgaria</p>
                                     </div>
@@ -184,7 +183,7 @@ export function AboutUs() {
                                     <h3 className='socials__h3'>Свържете се с нас.</h3>
                                     <div className='call-us-div socials-icons'>
                                         <figure className='socials-icons__figure'>
-                                            <img src={require('../../images/phone-call.png')}></img>
+                                            <img src={require('../../images/phone-call.png')} alt=''></img>
                                         </figure>
                                         <p className='socials-icons__p'>+359 899 818 526</p>
                                     </div>
@@ -194,7 +193,7 @@ export function AboutUs() {
                                     <h3 className='socials__h3'>Посетете ни.</h3>
                                     <div className='visit-us-div socials-icons'>
                                         <figure className='socials-icons__figure'>
-                                            <img src={require('../../images/location.png')}></img>
+                                            <img src={require('../../images/location.png')} alt=''></img>
                                         </figure>
                                         <p className='socials-icons__p'>ул. Братя Шкорпил 13, Варна, България</p>
                                     </div>

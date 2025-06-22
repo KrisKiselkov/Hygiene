@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { productsArray } from '../ProductsArray';
 import { Link } from 'react-router-dom';
 import { Footer } from '../Footer/Footer';
-import { motion, useInView, useAnimation, useMotionValue, useSpring, useTransform, useMotionTemplate, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 
 
 export function Product() {
