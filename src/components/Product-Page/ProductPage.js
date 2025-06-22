@@ -6,9 +6,13 @@ import { productsArray } from "../ProductsArray";
 import { Link } from "react-router-dom";
 import stars from '../../images/5-star-rating.webp';
 import { Footer } from "../Footer/Footer";
+import { store } from "../store";
+import { addItem } from "../Cart/cartSlice";
 
 
 export function ProductPage() {
+    const dispatch = store.dispatch;
+
     const { id } = useParams();
     const product = productsArray.filter((item) => item.id === id);
 
@@ -23,6 +27,10 @@ export function ProductPage() {
     const { label, price } = product[0];
 
     const [ prodNum, setProdNum ] = useState(1);
+
+    const addProdFunc = (prod) => {
+        dispatch(addItem(prod))
+    };
 
     const ymlArray = [];
     for(let i = 0; i < 5; i++) {
@@ -125,7 +133,7 @@ export function ProductPage() {
                                     <p className="product-num-div__num">{prodNum}</p>
                                     <div className="product-num-div__min" onClick={() => setProdNum(num => num += 1)}><p>+</p></div>
                                 </div>
-                                <button className='product-atc-div__atc-btn'>Добавете в количката</button>
+                                <button className='product-atc-div__atc-btn' onClick={() => addProdFunc(product[0])}>Добавете в количката</button>
                             </div>
 
                             <div className="product-info-div__product-icons-div">
