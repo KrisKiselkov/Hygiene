@@ -593,6 +593,35 @@
     .product-faq__faq-div {
         width: 90%;
     }
+
+
+    /* SIGNUP BANNER */
+    .signup-banner-content__h2 {
+        font-size: 24px;
+    }
+
+    .signup-banner-content__news-letter {
+        height: 3.5em;
+        width: 100%;
+    }
+
+    .signup-banner-content__news-letter input {
+        margin-top: 0em;
+        height: 100%;
+        width: 66.3%;
+        font-size: 16px;
+    }
+
+    .signup-banner-content__news-letter input:focus {
+        outline: none;
+    }
+
+    #signup-banner-content__inp-btn {
+        height: 2.6em;
+        width: 30%;
+        opacity: .9;
+        font-size: 15px;
+    }
 }
 
 
