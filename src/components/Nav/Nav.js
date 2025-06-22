@@ -58,7 +58,7 @@ export function Nav() {
                     <NavLink to={'/'} className="mobile-links__navLink"><li>Начало</li></NavLink>
                     <NavLink to={'/products'} className="mobile-links__navLink"><li>Продукти</li></NavLink>
                     <NavLink to={'/blog'} className="mobile-links__navLink"><li>Блог</li></NavLink>
-                    <NavLink to={'/subsriptions'} className="mobile-links__navLink"><li>Абонаменти</li></NavLink>
+                    <NavLink to={'/subscriptions'} className="mobile-links__navLink"><li>Абонаменти</li></NavLink>
                     <NavLink to={'/about-us'} className="mobile-links__navLink"><li>За нас</li></NavLink>
                 </ul>
             </nav>
