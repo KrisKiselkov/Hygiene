@@ -263,7 +263,7 @@ export function Product() {
                 <div className="product__product-signup-banner">
                     <div className="product-signup-banner__overlay">
                         <div className="product-signup-banner__signup-banner-content">
-                            <h2 className="signup-banner-content__h2">Насладете се на 10% отстъпка<br></br>от първата ви поръчка.</h2>
+                            <h2 className="signup-banner-content__h2">Получете 10% отстъпка<br></br>от първата ви поръчка.</h2>
 
                             <p className="signup-banner-content__p">Регистрирайте се сега и получете ексклузивен код за 10% намаление, който да ползвате при първата Ви поръчка. Присъединете се към Hygiene и подобрете вашето хигиенно изживяване.</p>
 

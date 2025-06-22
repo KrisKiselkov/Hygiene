@@ -14,6 +14,23 @@ export function Nav() {
         setCartUse(!cartUse);
     }
 
+    const navClick = () => {
+        const ham = document.getElementById('hamburger');
+        const info = document.querySelector('.mobile-nav');
+        const links = document.querySelector('.mobile-nav__mobile-links'); 
+    
+        ham.addEventListener('click', () => {
+            ham.classList.toggle('is-active');
+            info.classList.toggle('is-active-info');
+            
+        })
+    
+        links.addEventListener('click', () => {
+            ham.classList.toggle('is-active');
+            info.classList.toggle('is-active-info');
+        })
+    }
+
 
     return (
         <header>
@@ -28,8 +45,22 @@ export function Nav() {
                     <NavLink to={"/about-us"} className="nav__a"><p>За нас</p></NavLink>
                 </div>
 
+                <button id="hamburger" onClick={navClick}>
+                    <div className="bar"></div>
+                </button>
+
                 <Cart openCart={openCart} cartUse={cartUse} cart={cartState.cart}/>
                 <CartContainer openCart={openCart} cartUse={cartUse} cart={cartState.cart} dispatch={cartDispatch}/>
+            </nav>
+
+            <nav className="mobile-nav" onClick={navClick}>
+                <ul className="mobile-nav__mobile-links">
+                    <NavLink to={'/'} className="mobile-links__navLink"><li>Начало</li></NavLink>
+                    <NavLink to={'/products'} className="mobile-links__navLink"><li>Продукти</li></NavLink>
+                    <NavLink to={'/blog'} className="mobile-links__navLink"><li>Блог</li></NavLink>
+                    <NavLink to={'/subsriptions'} className="mobile-links__navLink"><li>Абонаменти</li></NavLink>
+                    <NavLink to={'/about-us'} className="mobile-links__navLink"><li>За нас</li></NavLink>
+                </ul>
             </nav>
         </header>
     );
