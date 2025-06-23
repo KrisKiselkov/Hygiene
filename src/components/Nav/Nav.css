@@ -20,8 +20,10 @@ nav {
 .nav__div {
     display: flex;
     position: relative;    
-    gap: 30px;
+    gap: 3em;
     min-width: fit-content;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .nav__a {
@@ -53,10 +55,6 @@ nav {
     color: #181818;
     font-weight: 1000;
     font-size: 36px;
-    letter-spacing: px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 #cart-button {
@@ -159,6 +157,7 @@ nav {
 
     #hamburger {
         display: block;
+        position: absolute;
     }
 
     #cart-button {
