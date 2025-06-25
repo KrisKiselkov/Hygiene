@@ -15,21 +15,12 @@ export function Nav() {
     }
 
     const navClick = () => {
-        const ham = document.getElementById('hamburger');
-        const info = document.querySelector('.mobile-nav');
-        const links = document.querySelector('.mobile-nav__mobile-links'); 
+    const ham = document.getElementById('hamburger');
+    const info = document.querySelector('.mobile-nav');
     
-        ham.addEventListener('click', () => {
-            ham.classList.toggle('is-active');
-            info.classList.toggle('is-active-info');
-            
-        })
-    
-        links.addEventListener('click', () => {
-            ham.classList.toggle('is-active');
-            info.classList.toggle('is-active-info');
-        })
-    }
+    ham.classList.toggle('is-active');
+    info.classList.toggle('is-active-info');
+    };
 
 
     return (
