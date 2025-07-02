@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { store } from "../store";
 import { removeItem } from "./cartSlice";
 import './Cart.css';
@@ -13,36 +14,34 @@ export function CartContainer(props) {
     const [ totalPrice, setTotalPrice ] = useState(0);
     
     const removeElement = (id) => {
-        const newCartElements = cartElements.filter(prod => prod !== id);
-        setCartElements(newCartElements);
         dispatch(removeItem(id))
     };
     
     const createCartItem = (prod) => {
-        const { label, image, price } = cart[prod];
-        
+        const { label, image, price, id } = prod;
+        console.log();
+
         return (
-            <div key={prod} className="cart-prod">
-                <figure className='cart-prod__figure'><img src={image} alt={prod}></img></figure>
-                <div className="cart-prod__cart-prod-desc">
+            <div key={id} className="cart-prod">
+                <figure className='cart-prod__figure'><img src={image} alt={label}></img></figure>
+                <Link to={`/products/${id}`} className="cart-prod__cart-prod-desc">
                     <h3 className="cart-prod-desc__type">{label}</h3>
                     <h2 className="cart-prod-desc__price">$ {price.toLocaleString()}</h2>
                     <p>1 Week Delivery</p>
-                </div>
-                <div className="cart-prod__remove" onClick={() => removeElement(prod)}>
+                </Link>
+                <div className="cart-prod__remove" onClick={() => removeElement(id)}>
                     <h1>X</h1>
                 </div>
-                <br></br>
             </div>
         );
     };
     
     useEffect(() => {
-        const newCartElements = Object.keys(cart).map(plane => createCartItem(plane));
-        setCartElements(newCartElements);
+    const newCartElements = Object.values(cart).map(prod => createCartItem(prod));
+    setCartElements(newCartElements);
 
-        const newTotalPrice = Object.values(cart).reduce((acc, plane) => acc + plane.price, 10852);
-        setTotalPrice(newTotalPrice);
+    const newTotalPrice = Object.values(cart).reduce((acc, prod) => acc + prod.price, 0);
+    setTotalPrice(newTotalPrice);
     }, [cart]);
 
     return (

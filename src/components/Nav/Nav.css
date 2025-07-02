@@ -58,7 +58,7 @@ nav {
 }
 
 #cart-button {
-    display: none;
+    display: block;
     position: absolute;
     right: 3em;
 }
@@ -158,10 +158,6 @@ nav {
     #hamburger {
         display: block;
         position: absolute;
-    }
-
-    #cart-button {
-        display: block;
     }
 
     .nav__a {

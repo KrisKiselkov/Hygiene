@@ -41,7 +41,7 @@ export function ProductPage() {
         try {
             return (
                 ymlArray.map((prod, index) => (
-                    <Link to={`/${prod.id}`} className='mb-products__product-div yml--product-div' key={index}>
+                    <Link to={`/products/${prod.id}`} className='mb-products__product-div yml--product-div' key={index}>
                         <button className='product-div__atc-btn'><img src={require('../../images/shopping_cart_24dp_181818_FILL0_wght400_GRAD0_opsz24.png')}></img></button>
                         <figure className='product-div__figure'><img src={prod.image}></img></figure>
                                  

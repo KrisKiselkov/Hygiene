@@ -104,6 +104,8 @@
     top: .5em;
     width: 42%;
     line-height: 28px;
+    text-decoration: none;
+    color: #181818;
 }
 
 .cart-prod-desc__price {

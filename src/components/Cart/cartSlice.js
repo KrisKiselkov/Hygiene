@@ -18,7 +18,7 @@ export const removeItem = (id) => {
       case 'cart/addItem': {
         const { label, image, price, id } = action.payload;
   
-        const newItem = { image, price, label };
+        const newItem = { image, price, label, id };
         // Add the new item to the cart (or replace it if it existed already)
         return { 
           ...cart, 
