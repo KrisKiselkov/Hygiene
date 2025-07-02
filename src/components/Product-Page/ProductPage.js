@@ -8,6 +8,7 @@ import stars from '../../images/5-star-rating.webp';
 import { Footer } from "../Footer/Footer";
 import { store } from "../store";
 import { addItem } from "../Cart/cartSlice";
+import { s } from "framer-motion/client";
 
 
 export function ProductPage() {
@@ -28,8 +29,8 @@ export function ProductPage() {
 
     const [ prodNum, setProdNum ] = useState(1);
 
-    const addProdFunc = (prod) => {
-        dispatch(addItem(prod))
+    const addProdFunc = (prod, prodNum) => {
+        dispatch(addItem(prod, prodNum))
     };
 
     const ymlArray = [];
@@ -77,6 +78,8 @@ export function ProductPage() {
     const inputText = (e) => {
         setInput(e.target.value);
     }
+
+    console.log(prodNum);
 
 
     return (
@@ -133,7 +136,11 @@ export function ProductPage() {
                                     <p className="product-num-div__num">{prodNum}</p>
                                     <div className="product-num-div__min" onClick={() => setProdNum(num => num += 1)}><p>+</p></div>
                                 </div>
-                                <button className='product-atc-div__atc-btn' onClick={() => addProdFunc(product[0])}>Добавете в количката</button>
+                                <button className='product-atc-div__atc-btn' onClick={() => {
+                                    addProdFunc(product[0], prodNum)
+                                    setProdNum(1);
+                                    alert(`Добавихте ${product[0].label} в количката!`);
+                                }}>Добавете в количката</button>
                             </div>
 
                             <div className="product-info-div__product-icons-div">

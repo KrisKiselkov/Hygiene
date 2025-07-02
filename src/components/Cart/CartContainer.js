@@ -18,8 +18,8 @@ export function CartContainer(props) {
     };
     
     const createCartItem = (prod) => {
-        const { label, image, price, id } = prod;
-        console.log();
+        const { label, image, price, id, quantity } = prod;
+        console.log(quantity);
 
         return (
             <div key={id} className="cart-prod">
@@ -28,6 +28,8 @@ export function CartContainer(props) {
                     <h3 className="cart-prod-desc__type">{label}</h3>
                     <h2 className="cart-prod-desc__price">$ {price.toLocaleString()}</h2>
                     <p>1 Week Delivery</p>
+
+                    <p>Брой: {quantity}</p>
                 </Link>
                 <div className="cart-prod__remove" onClick={() => removeElement(id)}>
                     <h1>X</h1>
@@ -40,7 +42,7 @@ export function CartContainer(props) {
     const newCartElements = Object.values(cart).map(prod => createCartItem(prod));
     setCartElements(newCartElements);
 
-    const newTotalPrice = Object.values(cart).reduce((acc, prod) => acc + prod.price, 0);
+    const newTotalPrice = Object.values(cart).reduce((acc, prod) => acc + prod.price * prod.quantity, 0);
     setTotalPrice(newTotalPrice);
     }, [cart]);
 
