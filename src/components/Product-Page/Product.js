@@ -150,7 +150,7 @@ export function Product() {
                     </div>
 
                     
-                    <div className='products-page-banner__pb-div pb-div--trdiv'>
+                    <Link to={"/products"} className='products-page-banner__pb-div pb-div--trdiv'>
                         <div className='pb-div__pb-div-text'>
                             <h3 className='pb-div-text__h3'>Най-продавани <br></br>продукти.</h3>
         
@@ -161,10 +161,10 @@ export function Product() {
                                 <p className='pb-view-prod-div__p'>Разгледай продуктите.</p>
                             </div>
                         </div>
-                    </div>
+                    </Link>
 
 
-                    <div className='products-page-banner__pb-div pb-div--frthdiv'>
+                    <Link to={"/subscriptions"} className='products-page-banner__pb-div pb-div--frthdiv'>
                         <div className='pb-div__pb-div-text'>
                             <div className='pb-div-text__pb-view-prod-div pb-view-prod-div--frthdiv'>
                                 <figure className='pb-view-prod-div__figure pb-view-prod-div__figure--frthdiv'>
@@ -175,10 +175,10 @@ export function Product() {
 
                             <h3 className='pb-div-text__h3--frthdiv'>Абонаментни <br></br>планове.</h3>
                         </div>
-                    </div>
+                    </Link>
 
                     
-                    <div className='products-page-banner__pb-div pb-div--fithdiv'>
+                    <Link to={"/blog"} className='products-page-banner__pb-div pb-div--fithdiv'>
                         <div className='pb-div__pb-div-text'>
                             <h3 className='pb-div-text__h3'>Нашите <br></br>блог странци.</h3>
         
@@ -189,7 +189,7 @@ export function Product() {
                                 <p className='pb-view-prod-div__p'>Разгледай блоговете.</p>
                             </div>
                         </div>
-                    </div>
+                    </Link>
 
 
                     <div className='products-page-banner__pb-div pb-div--sixdiv'>

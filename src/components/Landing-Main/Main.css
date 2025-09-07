@@ -245,10 +245,11 @@
 
 /* GRAPH */
 .landing-main__fh-graph {
-    background-color: #dbd5fa;
-    font-family: 'Arimo','Roboto', sans-serif;
-    height: 23em;
-    width: 100%;
+  background-color: #dbd5fa;
+  font-family: 'Arimo','Roboto', sans-serif;
+  height: 23em;
+  width: 100vw; /* full viewport width */
+  margin-left: calc(-50.4vw + 50%); /* recenters it */
 }
 
 .fh-graph__content {
@@ -257,6 +258,7 @@
     justify-content: space-between;
     margin: 0 auto;
     width: 80%;
+    max-width: 1400px;
     height: 100%;
 }
 
@@ -387,12 +389,20 @@ strong {
 .landing-main__why-choose {
     height: 18em;
     padding: 3em;
-    width: 100%;
+    width: 100vw; /* full viewport width */
+    margin-left: calc(-50.4vw + 50%); /* recenters it */
     background-image: url('../../images/head_to_toe_collection.webp');
     background-size: 36%;
     background-position: 95%;
     background-repeat: no-repeat;
     background-color: #dbd5fa;
+}
+
+.why-choose__why-choose-content {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1400px;
+    height: 100%;
 }
 
 .why-choose__h2 {
@@ -562,6 +572,11 @@ strong {
         height: 12em;
         background-image: none;
     }
+
+    .why-choose__why-choose-content {
+        width: 100%;
+        padding: 0em 2em;
+    }
     
     .why-choose__h2 {
         top: 1em;
@@ -572,7 +587,7 @@ strong {
         left: 0em;
         justify-content: center;
         margin: 0 auto;
-        width: 90%;
+        width: 100%;
         top: 2em;        
     }
 

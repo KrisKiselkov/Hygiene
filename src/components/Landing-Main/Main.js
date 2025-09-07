@@ -224,22 +224,24 @@ export function Main() {
             </div>
 
             <div className='landing-main__why-choose'>
-                <h2 className='main-h2 why-choose__h2'>Защо да изберете нас?</h2>
+                <div className='why-choose__why-choose-content'>
+                    <h2 className='main-h2 why-choose__h2'>Защо да изберете нас?</h2>
 
-                <div className='why-choose__why-blocks'>
-                    <div className='why-blocks__why-block-div'>
-                        <figure className='why-block-div__figure'><img src={require('../../images/sensor_occupied_16dp_181818_FILL0_wght400_GRAD0_opsz20.png')}></img></figure>
-                        <p>Персонализирани продукти</p>
-                    </div>
+                    <div className='why-choose__why-blocks'>
+                        <div className='why-blocks__why-block-div'>
+                            <figure className='why-block-div__figure'><img src={require('../../images/sensor_occupied_16dp_181818_FILL0_wght400_GRAD0_opsz20.png')}></img></figure>
+                            <p>Персонализирани продукти</p>
+                        </div>
 
-                    <div className='why-blocks__why-block-div'>
-                        <figure className='why-block-div__figure'><img src={require('../../images/sensor_occupied_16dp_181818_FILL0_wght400_GRAD0_opsz20.png')}></img></figure>
-                        <p>Персонализирани продукти</p>
-                    </div>
+                        <div className='why-blocks__why-block-div'>
+                            <figure className='why-block-div__figure'><img src={require('../../images/sensor_occupied_16dp_181818_FILL0_wght400_GRAD0_opsz20.png')}></img></figure>
+                            <p>Персонализирани продукти</p>
+                        </div>
 
-                    <div className='why-blocks__why-block-div'>
-                        <figure className='why-block-div__figure'><img src={require('../../images/sensor_occupied_16dp_181818_FILL0_wght400_GRAD0_opsz20.png')}></img></figure>
-                        <p>Персонализирани продукти</p>
+                        <div className='why-blocks__why-block-div'>
+                            <figure className='why-block-div__figure'><img src={require('../../images/sensor_occupied_16dp_181818_FILL0_wght400_GRAD0_opsz20.png')}></img></figure>
+                            <p>Персонализирани продукти</p>
+                        </div>
                     </div>
                 </div>
             </div>

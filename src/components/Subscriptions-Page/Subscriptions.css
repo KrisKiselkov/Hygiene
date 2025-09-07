@@ -37,7 +37,7 @@
 }
 
 .subscriptions__sub-div-table {
-    width: 90%;
+    width: 100%;
     margin: 5em auto 10em auto;
     border: 1px solid #dededf;
     padding: 1em;
@@ -54,6 +54,7 @@
 .th {
     text-align: center;
     position: relative;
+    padding-top: 1.8em;
 }
 
 .th::after {
@@ -111,10 +112,10 @@
     background-color: #8a6be9;
     color: #fff;
     border: 2px solid #8a6be9;
-    font-size: 16px;
-    padding: .4em .8em;
+    font-size: 17px;
+    padding: .6em 1.2em;
     border-radius: 10px;
-    margin-bottom: 1em;
+    margin-bottom: 2.5em;
     transition: all .3s;
 }
 
@@ -124,10 +125,11 @@
 }
 
 .td {
-    padding: .6em;
+    padding: 1.2em;
     text-align: center;
     font-weight: 500;
     position: relative;
+    font-size: 17px;
 }
 
 .td::after {

@@ -80,6 +80,8 @@
   padding: 1em;
   display: flex;
   position: relative;
+  text-decoration: none;
+  color: #181818;
 }
 
 .pb-div--trdiv {

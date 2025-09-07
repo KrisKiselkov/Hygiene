@@ -1,9 +1,18 @@
 import './AboutUs.css';
 import { Nav } from '../Nav/Nav';
 import { Footer } from '../Footer/Footer';
+import { useRef } from 'react';
+
 
 
 export function AboutUs() {
+    const formRef = useRef(null);
+
+    const scrollToForm = () => {
+        formRef.current?.scrollIntoView({ behavior: "smooth" });
+    };
+
+
     return (
         <>
             <Nav />
@@ -19,7 +28,7 @@ export function AboutUs() {
                     <div className='about-us-main__ab-us-main-content'>
                         <div className='ab-us-main-content__ab-us-left'>
                             <h2 className='ab-us-left__h2'>Малко за... <br></br><span>Hygiene Bulgaria</span></h2>
-                            <button className='ab-us-left__contact-btn'>
+                            <button onClick={scrollToForm} className='ab-us-left__contact-btn'>
                                 Пиши ни
                                 <figure className='contact-btn__figure'>
                                     <img src={require('../../images/arrow_forward_24dp_8A6BE9_FILL0_wght400_GRAD0_opsz24.png')} alt=''></img>
@@ -115,7 +124,7 @@ export function AboutUs() {
                                 <figure className='team-div__figure'></figure>
                                 <div className='team-div__team-emp-txt'>
                                     <p className='team-emp-txt__name-p'>Kristian Kiselkov</p>
-                                    <p className='team-emp-txt__pos-p'>Founder & CEO</p>
+                                    <p ref={formRef} className='team-emp-txt__pos-p'>Founder & CEO</p>
                                 </div>
                             </div>
                         </div>
